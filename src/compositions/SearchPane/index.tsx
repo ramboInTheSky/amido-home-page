@@ -1,49 +1,49 @@
-import Grid from '@material-ui/core/Grid'
-import TextField from '@material-ui/core/TextField'
-import ClearIcon from '@material-ui/icons/Clear'
-import SearchIcon from '@material-ui/icons/Search'
-import axios from 'axios'
+// import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-
-const AuthStr = 'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
+import AnimateHeight from 'react-animate-height'
+import Search from '../../components/Search'
+import SearchResults from '../../components/SearchResults'
+import { Box } from './components'
 
 type SearchPaneProps = {}
 
+// export const ContentVariants = {
+//   expanded: () => ({
+//     height: 'auto',
+//     transition: {
+//       when: 'afterChildren',
+//       duration: 0.3,
+//       ease: "easeInOut",
+//     },
+//   }),
+//   collapsed: () => ({
+//     height: '1px',
+//     transition: {
+//       when: 'afterChildren',
+//       duration: 0.5,
+//       ease: "easeInOut",
+//     },
+//   }),
+// }
+
 const SearchPane = (props: SearchPaneProps) => {
-  const [value, setValue] = useState('')
-
-  const handleSearch = async () => {
-    console.log(value)
-    const res = await axios.get('https://amidodevelopment.atlassian.net/wiki/rest/api/space')
-    console.log(res)
-  }
-  const handleKeyPress = (e: any) => {
-    if (e.keyCode === 13) {
-      handleSearch()
-    } else {
-      setValue(e.target.value)
-      console.log(value)
-    }
-  }
-  const clearSearch = () => setValue('')
-  const handleInputChange = (e: any) => setValue(e.target.value)
-
+  const defaultValue: [] = []
+  const [results, setResults] = useState(defaultValue)
+//   const collapsed = results.length === 0
   return (
-    <Grid container spacing={1} alignItems="flex-end">
-      <Grid item>
-        <TextField
-          id="input-with-icon-grid"
-          label="Search Confluence"
-          onKeyUp={handleKeyPress}
-          value={value}
-          onChange={handleInputChange}
-        />
-      </Grid>
-      <Grid item style={{ cursor: 'pointer' }}>
-        {value && <ClearIcon onClick={clearSearch} />}
-        <SearchIcon onClick={handleSearch} />
-      </Grid>
-    </Grid>
+    <Box>
+      <Search callback={setResults} />
+      <AnimateHeight duration={300} height={results.length * 20}>
+      {/* <motion.div
+      style={{maxHeight: '300px'}}
+        initial={'collapsed'}
+        animate={collapsed ? 'collapsed' : 'expanded'}
+        variants={ContentVariants}
+      > */}
+        <SearchResults results={results} />
+      {/* </motion.div> */}
+      </AnimateHeight>
+    </Box>
   )
 }
 

@@ -1,0 +1,588 @@
+{
+  "results": [
+    {
+      "id": 747470850,
+      "key": "AC",
+      "name": "Amido Academy",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AC/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AC",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AC/theme",
+        "history": "",
+        "homepage": "/rest/api/content/747470940"
+      },
+      "_links": {
+        "webui": "/spaces/AC",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AC"
+      }
+    },
+    {
+      "id": 913440870,
+      "key": "ACSR",
+      "name": "Amido CSR",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/ACSR/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=ACSR",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/ACSR/theme",
+        "history": "",
+        "homepage": "/rest/api/content/913440900"
+      },
+      "_links": {
+        "webui": "/spaces/ACSR",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/ACSR"
+      }
+    },
+    {
+      "id": 1105526786,
+      "key": "AE",
+      "name": "Amido Events",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AE/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AE",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AE/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1105526816"
+      },
+      "_links": {
+        "webui": "/spaces/AE",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AE"
+      }
+    },
+    {
+      "id": 726499342,
+      "key": "FOR",
+      "name": "Amido ForgeRock Community",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/FOR/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=FOR",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/FOR/theme",
+        "history": "",
+        "homepage": "/rest/api/content/726499372"
+      },
+      "_links": {
+        "webui": "/spaces/FOR",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/FOR"
+      }
+    },
+    {
+      "id": 1317601346,
+      "key": "AHP",
+      "name": "Amido Home Page",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AHP/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AHP",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AHP/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1317601482"
+      },
+      "_links": {
+        "webui": "/spaces/AHP",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AHP"
+      }
+    },
+    {
+      "id": 1075511561,
+      "key": "AIC",
+      "name": "Amido Identity Community",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AIC/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AIC",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AIC/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1075511716"
+      },
+      "_links": {
+        "webui": "/spaces/AIC",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AIC"
+      }
+    },
+    {
+      "id": 1044512839,
+      "key": "AK",
+      "name": "Amido KLAB",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AK/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AK",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AK/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1044512989"
+      },
+      "_links": {
+        "webui": "/spaces/AK",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AK"
+      }
+    },
+    {
+      "id": 57606145,
+      "key": "AO",
+      "name": "Amido - Onboarding",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AO/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AO",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AO/theme",
+        "history": "",
+        "homepage": "/rest/api/content/57573378"
+      },
+      "_links": {
+        "webui": "/spaces/AO",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AO"
+      }
+    },
+    {
+      "id": 9306113,
+      "key": "HR",
+      "name": "Amido People ",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/HR/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=HR",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/HR/theme",
+        "history": "",
+        "homepage": "/rest/api/content/9142279"
+      },
+      "_links": {
+        "webui": "/spaces/HR",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/HR"
+      }
+    },
+    {
+      "id": 746029058,
+      "key": "SEC",
+      "name": "Amido Security Community",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/SEC/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=SEC",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/SEC/theme",
+        "history": "",
+        "homepage": "/rest/api/content/746029093"
+      },
+      "_links": {
+        "webui": "/spaces/SEC",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/SEC"
+      }
+    },
+    {
+      "id": 9306114,
+      "key": "IT",
+      "name": "Amido Technical Operations",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/IT/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=IT",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/IT/theme",
+        "history": "",
+        "homepage": "/rest/api/content/9142291"
+      },
+      "_links": {
+        "webui": "/spaces/IT",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/IT"
+      }
+    },
+    {
+      "id": 1126039813,
+      "key": "AMRC",
+      "name": "AMRC",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AMRC/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AMRC",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AMRC/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1126039968"
+      },
+      "_links": {
+        "webui": "/spaces/AMRC",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AMRC"
+      }
+    },
+    {
+      "id": 65929217,
+      "key": "BAT",
+      "name": "A&X",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/BAT/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=BAT",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/BAT/theme",
+        "history": "",
+        "homepage": "/rest/api/content/65765385"
+      },
+      "_links": {
+        "webui": "/spaces/BAT",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/BAT"
+      }
+    },
+    {
+      "id": 1270087868,
+      "key": "BTRI",
+      "name": "Beaver Trison",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/BTRI/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=BTRI",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/BTRI/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1270087898"
+      },
+      "_links": {
+        "webui": "/spaces/BTRI",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/BTRI"
+      }
+    },
+    {
+      "id": 1087733809,
+      "key": "BET",
+      "name": "Betway",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/BET/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=BET",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/BET/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1087733964"
+      },
+      "_links": {
+        "webui": "/spaces/BET",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/BET"
+      }
+    },
+    {
+      "id": 1025736791,
+      "key": "COM",
+      "name": "Communities",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/COM/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=COM",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/COM/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1025736821"
+      },
+      "_links": {
+        "webui": "/spaces/COM",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/COM"
+      }
+    },
+    {
+      "id": 379682818,
+      "key": "CF",
+      "name": "Condor Ferries",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/CF/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=CF",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/CF/theme",
+        "history": "",
+        "homepage": "/rest/api/content/379682864"
+      },
+      "_links": {
+        "webui": "/spaces/CF",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/CF"
+      }
+    },
+    {
+      "id": 142959560,
+      "key": "CS",
+      "name": "Connected Services",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/CS/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=CS",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/CS/theme",
+        "history": "",
+        "homepage": "/rest/api/content/142959581"
+      },
+      "_links": {
+        "webui": "/spaces/CS",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/CS"
+      }
+    },
+    {
+      "id": 726466590,
+      "key": "DE",
+      "name": "Data Engineering",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/DE/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=DE",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/DE/theme",
+        "history": "",
+        "homepage": "/rest/api/content/726466620"
+      },
+      "_links": {
+        "webui": "/spaces/DE",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/DE"
+      }
+    },
+    {
+      "id": 142587919,
+      "key": "DSC",
+      "name": "Delivery Management",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/DSC/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=DSC",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/DSC/theme",
+        "history": "",
+        "homepage": "/rest/api/content/142587954"
+      },
+      "_links": {
+        "webui": "/spaces/DSC",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/DSC"
+      }
+    },
+    {
+      "id": 39649281,
+      "key": "AD",
+      "name": "DevOps Competency",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/AD/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=AD",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/AD/theme",
+        "history": "",
+        "homepage": "/rest/api/content/39387146"
+      },
+      "_links": {
+        "webui": "/spaces/AD",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/AD"
+      }
+    },
+    {
+      "id": 307363868,
+      "key": "HAL",
+      "name": "FarmSmart",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/HAL/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=HAL",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/HAL/theme",
+        "history": "",
+        "homepage": "/rest/api/content/307363913"
+      },
+      "_links": {
+        "webui": "/spaces/HAL",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/HAL"
+      }
+    },
+    {
+      "id": 1246396635,
+      "key": "FIN",
+      "name": "Finance",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/FIN/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=FIN",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/FIN/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1246396670"
+      },
+      "_links": {
+        "webui": "/spaces/FIN",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/FIN"
+      }
+    },
+    {
+      "id": 1102282838,
+      "key": "MOJ",
+      "name": "HMCTS Programme",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/MOJ/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=MOJ",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/MOJ/theme",
+        "history": "",
+        "homepage": "/rest/api/content/1102282868"
+      },
+      "_links": {
+        "webui": "/spaces/MOJ",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/MOJ"
+      }
+    },
+    {
+      "id": 142150452,
+      "key": "FEET",
+      "name": "Interfaces and Devices",
+      "type": "global",
+      "status": "current",
+      "_expandable": {
+        "settings": "/rest/api/space/FEET/settings",
+        "metadata": "",
+        "operations": "",
+        "lookAndFeel": "/rest/api/settings/lookandfeel?spaceKey=FEET",
+        "permissions": "",
+        "icon": "",
+        "description": "",
+        "theme": "/rest/api/space/FEET/theme",
+        "history": "",
+        "homepage": "/rest/api/content/142150487"
+      },
+      "_links": {
+        "webui": "/spaces/FEET",
+        "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space/FEET"
+      }
+    }
+  ],
+  "start": 0,
+  "limit": 25,
+  "size": 25,
+  "_links": {
+    "base": "https://amidodevelopment.atlassian.net/wiki",
+    "context": "/wiki",
+    "next": "/rest/api/space?next=true&limit=25&start=25",
+    "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/space"
+  }
+}
