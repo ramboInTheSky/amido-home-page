@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import Search from '../../components/Search'
 import SearchResults from '../../components/SearchResults'
-import { Box } from './components'
+import { Box } from '../../components/SharedStyledComponents'
 
 type SearchPaneProps = {}
 
