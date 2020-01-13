@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import Layout from '../../components/PageLayout'
 import SearchPane from '../../compositions/SearchPane'
@@ -7,6 +8,10 @@ import { Col, HomePageWrapper, Row } from './components'
 type HomePageProps = {}
 
 const HomePage = (props: HomePageProps) => {
+  setTimeout(() => {
+    const element = document.querySelector('#twitter-widget-0') as any
+    element?.contentDocument.getElementsByTagName('footer')[0].remove()
+  }, 500)
   return (
     <Layout>
       <HomePageWrapper className="mainContainer">
@@ -24,11 +29,23 @@ const HomePage = (props: HomePageProps) => {
           </Row>
         </Col>
         <Col className="rightCol">
-          <SearchPane />
-          <SearchPane />
-          <SearchPane />
-          <SearchPane />
-          <SearchPane />
+          <Row>
+            <a
+              className="twitter-timeline"
+              data-height="700"
+              data-width="400"
+              href="https://twitter.com/WeAreAmido?ref_src=twsrc%5Etfw"
+            />
+          </Row>
+          <Row>
+            <iframe
+              src="https://www.linkedin.com/embed/feed/update/urn:li:share:6616282134443241472"
+              height="530"
+              width="400"
+              frameBorder="0"
+              title="Embedded post"
+            />
+          </Row>
         </Col>
       </HomePageWrapper>
     </Layout>

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const HomePageWrapper = styled.div`
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 6fr 2fr;
   align-items: flex-start;
   grid-gap: 1rem;
 `
