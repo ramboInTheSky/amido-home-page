@@ -2,21 +2,21 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import AnimateHeight from 'react-animate-height'
-import SearchResults from '../../components/SearchResults'
 import { Box } from '../../components/SharedStyledComponents'
+import SpacesList from '../../components/SpacesList'
 
 type SpacesListProps = {
   spaceKey?: string
 }
 
-const SpacesList = ({ spaceKey = '' }: SpacesListProps) => {
+const SpacesListPane = ({ spaceKey = '' }: SpacesListProps) => {
   const defaultValue: [] = []
 
   const [results, setResults] = useState(defaultValue)
 
   useEffect(() => {
     async function fetchData() {
-      const res: { data: { results: [] } } = await axios.get('/allspaces.json')
+      const res: { data: { results: [] } } = await axios.get('/allspaces')
       setResults(res.data.results)
     }
     fetchData()
@@ -28,10 +28,10 @@ const SpacesList = ({ spaceKey = '' }: SpacesListProps) => {
   return (
     <Box>
       <AnimateHeight duration={300} height={results.length * 20}>
-        <SearchResults results={results} />
+        <SpacesList results={results} />
       </AnimateHeight>
     </Box>
   )
 }
 
-export default SpacesList
+export default SpacesListPane

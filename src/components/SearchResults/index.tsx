@@ -7,14 +7,14 @@ type SearchResultsProps = {
 const SearchResults = ({ results }: SearchResultsProps) => {
   return (
     <ul>
-      {results.map((item: any) => (
-        <li key={item.id}>
+      {results.length !== 0 && results.map((item: any) => (
+        <li key={item.content.id}>
           <a
-            href={`https://amidodevelopment.atlassian.net/wiki${item._links.webui}`}
+            href={`https://amidodevelopment.atlassian.net/wiki${item.content._links.webui}`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {item.name}
+            {item.content.title}
           </a>
         </li>
       ))}

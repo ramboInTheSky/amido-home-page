@@ -90,6 +90,7 @@
     "workbox-webpack-plugin": "4.3.1"
   },
   "devDependencies": {
+    "npm-watch": "^0.6.0",
     "tslint": "^5.20.1",
     "tslint-config-airbnb": "^5.11.2",
     "tslint-config-prettier": "^1.18.0",
@@ -99,7 +100,16 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
+    "watch": "npm-watch",
     "server": "NODE_ENV=development nodemon --exec babel-node launcher.js"
+  },
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "js,jsx,ts,tsx",
+      "quiet": true,
+      "legacyWatch": true
+    }
   },
   "eslintConfig": {
     "extends": "react-app"

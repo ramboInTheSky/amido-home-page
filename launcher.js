@@ -81,4 +81,21 @@ app.get('/allspaces', (req, res) => {
     })
 })
 
+app.get('/search', (req, res) => {
+  const searchTerm = req.query.term
+  axios
+    .get(`https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~${searchTerm}`, {
+      headers: {
+        Authorization: AuthStr,
+        'X-Atlassian-Token': 'no-check',
+      },
+    })
+    .then(response => {
+      res.send(response.data)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+})
+
 app.listen(port)

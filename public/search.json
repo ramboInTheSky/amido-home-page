@@ -1,0 +1,1024 @@
+{
+  "results": [
+    {
+      "content": {
+        "id": "743637079",
+        "type": "page",
+        "status": "current",
+        "title": "Identity and Access Management (IdAM)",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/743637079/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/RD"
+        },
+        "_links": {
+          "webui": "/spaces/RD/pages/743637079",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/743637079",
+          "tinyui": "/x/VwBTL"
+        }
+      },
+      "title": "Identity and Access Management (@@@hl@@@IdAM@@@endhl@@@)",
+      "excerpt": "Solution Name\n\n\n\nIdentity and Access Management (@@@hl@@@IDAM@@@endhl@@@)\n\n\n\n\n\nSolution Definition\n\n\n\nConsumer, Enterprise and B2B @@@hl@@@IDAM@@@endhl@@@ service design and build &hellip; they are marketing to.\n\n\n\n\n\nCost\n\n\n\n\n£300k discovery\n\n£500 - £1m delivery\n\n\n\n\n\n\nTrack Rec. &amp; References\n\n\n\nASOS Identity, Canon ID, MoJ, IAG, BBC, NHS\n\n\n\n\n\n\n\n  gtm-@@@hl@@@idam@@@endhl@@@",
+      "url": "/spaces/RD/pages/743637079",
+      "resultGlobalContainer": { "title": "Research and Development", "displayUrl": "/spaces/RD" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2018-11-14T14:30:46.153Z",
+      "friendlyLastModified": "14 Nov, 2018",
+      "score": 6.7316346
+    },
+    {
+      "content": {
+        "id": "140147397",
+        "type": "page",
+        "status": "current",
+        "title": "IdAM Topology",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/140147397/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/PROJ"
+        },
+        "_links": {
+          "webui": "/spaces/PROJ/pages/140147397/IdAM+Topology",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/140147397",
+          "tinyui": "/x/xXpaC"
+        }
+      },
+      "title": "@@@hl@@@IdAM@@@endhl@@@ Topology",
+      "excerpt": "@@@hl@@@idam@@@endhl@@@ topology deployment",
+      "url": "/spaces/PROJ/pages/140147397/IdAM+Topology",
+      "resultGlobalContainer": { "title": "Project Archive", "displayUrl": "/spaces/PROJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2017-04-24T12:01:04.453Z",
+      "friendlyLastModified": "24 Apr, 2017",
+      "score": 6.550829
+    },
+    {
+      "content": {
+        "id": "767590438",
+        "type": "page",
+        "status": "current",
+        "title": "Nando's IdAM",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/767590438/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/RD"
+        },
+        "_links": {
+          "webui": "/spaces/RD/pages/767590438/Nando%27s+IdAM",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/767590438",
+          "tinyui": "/x/JoDALQ"
+        }
+      },
+      "title": "Nando&#39;s @@@hl@@@IdAM@@@endhl@@@",
+      "excerpt": "https://github.com/amido/gatling-kms-s3 https://github.com/amido/gatling-kms-s3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  lessons-learnt gtm-@@@hl@@@idam@@@endhl@@@",
+      "url": "/spaces/RD/pages/767590438/Nando%27s+IdAM",
+      "resultGlobalContainer": { "title": "Research and Development", "displayUrl": "/spaces/RD" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-06-25T14:39:14.793Z",
+      "friendlyLastModified": "25 Jun, 2019",
+      "score": 6.0792365
+    },
+    {
+      "content": {
+        "id": "1166376965",
+        "type": "page",
+        "status": "current",
+        "title": "IAG IDAM",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/1166376965/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/RD"
+        },
+        "_links": {
+          "webui": "/spaces/RD/pages/1166376965/IAG+IDAM",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/1166376965",
+          "tinyui": "/x/BYCFRQ"
+        }
+      },
+      "title": "IAG @@@hl@@@IDAM@@@endhl@@@",
+      "excerpt": "dc-devops gtm-@@@hl@@@idam@@@endhl@@@ dc-quality-assurance gtm-cloud-service-integration rd-harvesting",
+      "url": "/spaces/RD/pages/1166376965/IAG+IDAM",
+      "resultGlobalContainer": { "title": "Research and Development", "displayUrl": "/spaces/RD" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-06-24T10:19:34.835Z",
+      "friendlyLastModified": "24 Jun, 2019",
+      "score": 5.753061
+    },
+    {
+      "content": {
+        "id": "att1251770429",
+        "type": "attachment",
+        "status": "current",
+        "title": "ATOS - CON_15609- SoW267- IDAM-CFT v1.docx",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att1251770429/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/MOJ"
+        },
+        "_links": {
+          "webui": "/spaces/MOJ/pages/1130397770?preview=%2F1130397770%2F1251770429%2FATOS+-+CON_15609-+SoW267-+IDAM-CFT+v1.docx",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att1251770429"
+        }
+      },
+      "title": "ATOS - CON_15609- SoW267- @@@hl@@@IDAM@@@endhl@@@-CFT v1.docx",
+      "excerpt": "Statement of Work\n\nATOS - CON_15609- SoW256- @@@hl@@@IDAM@@@endhl@@@-CFT\n\nSCHEDULE 3 – SCHEDULE OF WORKS (SoW)\nCommon Component Project Development – Security Capabilities\nHMCTS &hellip; Reform Programme\n1.\n\nSOW DETAILS\nDate of SOW:\nDD/MM/YYYY\n\n04/11/2019\n\nSOW/Release Reference:\n(e.g. DSFXX-XXX.X = DSF01-001.1)\n\nATOS - CON_15609- SoW267- @@@hl@@@IDAM@@@endhl@@@",
+      "url": "/spaces/MOJ/pages/1130397770?preview=%2F1130397770%2F1251770429%2FATOS+-+CON_15609-+SoW267-+IDAM-CFT+v1.docx",
+      "resultParentContainer": {
+        "title": "[MoJ] Atos - PO/SoW/Billing status (archived)",
+        "displayUrl": "/spaces/MOJ/pages/1130397770"
+      },
+      "resultGlobalContainer": { "title": "HMCTS Programme", "displayUrl": "/spaces/MOJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-word",
+      "lastModified": "2019-11-08T13:40:00.493Z",
+      "friendlyLastModified": "08 Nov, 2019",
+      "score": 5.1587934
+    },
+    {
+      "content": {
+        "id": "att1225195955",
+        "type": "attachment",
+        "status": "current",
+        "title": "ATOS - CON_15609- SoW256- IDAM-CFT v1.docx",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att1225195955/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/MOJ"
+        },
+        "_links": {
+          "webui": "/spaces/MOJ/pages/1130397770?preview=%2F1130397770%2F1225195955%2FATOS+-+CON_15609-+SoW256-+IDAM-CFT+v1.docx",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att1225195955"
+        }
+      },
+      "title": "ATOS - CON_15609- SoW256- @@@hl@@@IDAM@@@endhl@@@-CFT v1.docx",
+      "excerpt": "Statement of Work\n\nATOS - CON_15609- SoW256- @@@hl@@@IDAM@@@endhl@@@-CFT\n\nSCHEDULE 3 – SCHEDULE OF WORKS (SoW)\nCommon Component Project Development – Security Capabilities\nHMCTS &hellip; Reform Programme\n1.\n\nSOW DETAILS\nDate of SOW:\nDD/MM/YYYY\n\n05/08/2019\n\nSOW/Release Reference:\n(e.g. DSFXX-XXX.X = DSF01-001.1)\n\nATOS - CON_15609- SoW256- @@@hl@@@IDAM@@@endhl@@@",
+      "url": "/spaces/MOJ/pages/1130397770?preview=%2F1130397770%2F1225195955%2FATOS+-+CON_15609-+SoW256-+IDAM-CFT+v1.docx",
+      "resultParentContainer": {
+        "title": "[MoJ] Atos - PO/SoW/Billing status (archived)",
+        "displayUrl": "/spaces/MOJ/pages/1130397770"
+      },
+      "resultGlobalContainer": { "title": "HMCTS Programme", "displayUrl": "/spaces/MOJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-word",
+      "lastModified": "2019-10-04T11:08:18.295Z",
+      "friendlyLastModified": "04 Oct, 2019",
+      "score": 4.9344983
+    },
+    {
+      "content": {
+        "id": "1230831637",
+        "type": "page",
+        "status": "current",
+        "title": "Addison - test project",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/1230831637/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/PRJ"
+        },
+        "_links": {
+          "webui": "/spaces/PRJ/pages/1230831637/Addison+-+test+project",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/1230831637",
+          "tinyui": "/x/FQBdSQ"
+        }
+      },
+      "title": "Addison - test project",
+      "excerpt": "Project Details\n\n\n\n\n\n\nProject Name\n\nTest\n\n\n\nLocation\n\nLondon\n\n\n\n\nGTM\n\n\n\n\n@@@hl@@@IDAM@@@endhl@@@\n\n\n\n\n\nProject type\n\n\n\n@@@hl@@@IDAM@@@endhl@@@\n\n\n\n\n\nStatus\n\nOngoing\n\n\n\nStart Date\n\nMar\n\n\n\nEnd &hellip;\n\n\n\njfhsdkjhfjdks\n\n\n\n\n\nLanguages\n\n\n\njfhsdkjhfjdks\n\n\n\n\n\nChallenges\n\n\n\njfhsdkjhfjdks\n\n\n\n\n\n\n\n\n  government @@@hl@@@idam@@@endhl@@@",
+      "url": "/spaces/PRJ/pages/1230831637/Addison+-+test+project",
+      "resultGlobalContainer": { "title": "Projects", "displayUrl": "/spaces/PRJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-10-08T13:29:42.832Z",
+      "friendlyLastModified": "08 Oct, 2019",
+      "score": 3.397859
+    },
+    {
+      "content": {
+        "id": "760709223",
+        "type": "page",
+        "status": "current",
+        "title": "IDAM use cases",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/760709223/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/BAT"
+        },
+        "_links": {
+          "webui": "/spaces/BAT/pages/760709223/IDAM+use+cases",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/760709223",
+          "tinyui": "/x/Z4BXLQ"
+        }
+      },
+      "title": "@@@hl@@@IDAM@@@endhl@@@ use cases",
+      "excerpt": "(@@@hl@@@IDAM@@@endhl@@@).\n\nMost implementations will take a subset of these use-cases.\n\nUse-case categories\n\nUse-cases are split into four categories:\n\n\nJoiner\n\nMover / identity edits\n\nLeaver\n\nAccess management",
+      "url": "/spaces/BAT/pages/760709223/IDAM+use+cases",
+      "resultGlobalContainer": { "title": "A&X", "displayUrl": "/spaces/BAT" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-11-28T09:15:27.881Z",
+      "friendlyLastModified": "28 Nov, 2019",
+      "score": 3.3752446
+    },
+    {
+      "content": {
+        "id": "1156972689",
+        "type": "page",
+        "status": "current",
+        "title": "IDAM ITHC June 19th 2019",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/1156972689/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/MOJ"
+        },
+        "_links": {
+          "webui": "/spaces/MOJ/pages/1156972689/IDAM+ITHC+June+19th+2019",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/1156972689",
+          "tinyui": "/x/kQD2R"
+        }
+      },
+      "title": "@@@hl@@@IDAM@@@endhl@@@ ITHC June 19th 2019",
+      "excerpt": "security patches as a minimum.\n\nBefore release\n\n\n\nTomcat is used for 2 different purposes within @@@hl@@@IDAM@@@endhl@@@:\n\n\nDeploying Spring Boot web applications \nWebapps are deployed &hellip; the Spring Boot version the application is using unless it&#39;s explicitly overwritten by setting tomcat.version.\n@@@hl@@@IDAM@@@endhl@@@ V1.2 webapps are overwriting that property",
+      "url": "/spaces/MOJ/pages/1156972689/IDAM+ITHC+June+19th+2019",
+      "resultGlobalContainer": { "title": "HMCTS Programme", "displayUrl": "/spaces/MOJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-06-19T15:10:59.409Z",
+      "friendlyLastModified": "19 Jun, 2019",
+      "score": 3.2797992
+    },
+    {
+      "content": {
+        "id": "799637621",
+        "type": "page",
+        "status": "current",
+        "title": "IDAM Webapp logs",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/799637621/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/PROJ"
+        },
+        "_links": {
+          "webui": "/spaces/PROJ/pages/799637621/IDAM+Webapp+logs",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/799637621",
+          "tinyui": "/x/dYCpLw"
+        }
+      },
+      "title": "@@@hl@@@IDAM@@@endhl@@@ Webapp logs",
+      "excerpt": "should be raised as critical if it is present for a sustained period of time.\nrequests\n| where cloud_RoleName in (&quot;@@@hl@@@IDAM@@@endhl@@@ API&quot;, &quot;@@@hl@@@IDAM@@@endhl@@@ Web Public&quot;, &quot;@@@hl@@@IDAM@@@endhl@@@ Web Admin",
+      "url": "/spaces/PROJ/pages/799637621/IDAM+Webapp+logs",
+      "resultGlobalContainer": { "title": "Project Archive", "displayUrl": "/spaces/PROJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2018-12-07T13:46:50.329Z",
+      "friendlyLastModified": "07 Dec, 2018",
+      "score": 3.1914563
+    },
+    {
+      "content": {
+        "id": "767296406",
+        "type": "page",
+        "status": "current",
+        "title": "IDAM 101 syllabus",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/767296406/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/BAT"
+        },
+        "_links": {
+          "webui": "/spaces/BAT/pages/767296406/IDAM+101+syllabus",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/767296406",
+          "tinyui": "/x/lgO8LQ"
+        }
+      },
+      "title": "@@@hl@@@IDAM@@@endhl@@@ 101 syllabus",
+      "excerpt": "Digital (ForgeRock)\n\nMoJ @@@hl@@@IdAM@@@endhl@@@ (ForgeRock)\n\n\n\n1.5h\n\n\n\nEfthy\n\n\n\n\nUX of identity\n\n\nMFA, on device? off device\n\nBenefits of SSO / social\n\nFederation",
+      "url": "/spaces/BAT/pages/767296406/IDAM+101+syllabus",
+      "resultGlobalContainer": { "title": "A&X", "displayUrl": "/spaces/BAT" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2018-11-28T09:30:18.701Z",
+      "friendlyLastModified": "28 Nov, 2018",
+      "score": 2.857958
+    },
+    {
+      "content": {
+        "id": "698908687",
+        "type": "page",
+        "status": "current",
+        "title": "IDAM Healthcheck Application",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/698908687/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/PROJ"
+        },
+        "_links": {
+          "webui": "/spaces/PROJ/pages/698908687/IDAM+Healthcheck+Application",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/698908687",
+          "tinyui": "/x/D4CoKQ"
+        }
+      },
+      "title": "@@@hl@@@IDAM@@@endhl@@@ Healthcheck Application",
+      "excerpt": "-am.service.core-compute-@@@hl@@@idam@@@endhl@@@-saat.internal  \n-Dam.uri=http://forgerock-am.service.core-compute-idam-saat.internal:8080/openam &hellip; \n-Dam.smoke.test.user.username=idamOwner@hmcts.net \n-Dam.client.name=&lt;client name&gt; @@@hl@@@idam@@@endhl@@@-health-checker-0.0.x-SNAPSHOT.jar\nIDM Configuration\njava -jar \n-Dvault.base.url=&lt;vault url&gt;\n-Dvault.client.id",
+      "url": "/spaces/PROJ/pages/698908687/IDAM+Healthcheck+Application",
+      "resultGlobalContainer": { "title": "Project Archive", "displayUrl": "/spaces/PROJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2018-10-29T09:37:13.813Z",
+      "friendlyLastModified": "29 Oct, 2018",
+      "score": 2.7911723
+    },
+    {
+      "content": {
+        "id": "141531217",
+        "type": "page",
+        "status": "current",
+        "title": "IdAM API & ForgeRock API",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/141531217/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/PROJ"
+        },
+        "_links": {
+          "webui": "/spaces/PROJ/pages/141531217",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/141531217",
+          "tinyui": "/x/UZhvC"
+        }
+      },
+      "title": "@@@hl@@@IdAM@@@endhl@@@ API &amp; ForgeRock API",
+      "excerpt": "Use Case\n\n@@@hl@@@IdAM@@@endhl@@@ API\n\nFR Component\n\nFR API\n\n\n\nCreate user\n\nPOST\n\nIDM\n\nPOST /managed/user\n\n\n\nRegister user\n\nPOST /users/registerUser\n\nIDM\n\nPOST",
+      "url": "/spaces/PROJ/pages/141531217",
+      "resultGlobalContainer": { "title": "Project Archive", "displayUrl": "/spaces/PROJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2017-07-06T15:34:09.857Z",
+      "friendlyLastModified": "06 Jul, 2017",
+      "score": 2.7290368
+    },
+    {
+      "content": {
+        "id": "att406028297",
+        "type": "attachment",
+        "status": "current",
+        "title": "idam-sample-client.zip",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att406028297/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/PROJ"
+        },
+        "_links": {
+          "webui": "/spaces/PROJ/pages/405929996/Sample+clients?preview=%2F405929996%2F406028297%2Fidam-sample-client.zip",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att406028297"
+        }
+      },
+      "title": "@@@hl@@@idam@@@endhl@@@-sample-client.zip",
+      "excerpt": "",
+      "url": "/spaces/PROJ/pages/405929996/Sample+clients?preview=%2F405929996%2F406028297%2Fidam-sample-client.zip",
+      "resultParentContainer": {
+        "title": "Sample clients",
+        "displayUrl": "/spaces/PROJ/pages/405929996/Sample+clients"
+      },
+      "resultGlobalContainer": { "title": "Project Archive", "displayUrl": "/spaces/PROJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-zip",
+      "lastModified": "2018-06-08T14:40:41.417Z",
+      "friendlyLastModified": "08 Jun, 2018",
+      "score": 1.8395642
+    },
+    {
+      "content": {
+        "id": "att173932819",
+        "type": "attachment",
+        "status": "current",
+        "title": "Security Controls as Applied to HMCTS Strategic IdAM.pdf",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att173932819/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/AD"
+        },
+        "_links": {
+          "webui": "/spaces/AD/pages/174489684/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F174489684%2F173932819%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM.pdf",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att173932819"
+        }
+      },
+      "title": "Security Controls as Applied to HMCTS Strategic IdAM.pdf",
+      "excerpt": "Security Controls as Applied to HMCTS Strategic @@@hl@@@IdAM@@@endhl@@@\n\nSTATUS:\n\nDeveloped by Richard Slater\n\nTraffic Manager\n{prefix}-{env}-public-web-tm\n\nTraffic Manager &hellip;\nupgrade to seamlessly\nincrease security of\nhashed passwords.\nAzure Key Vault\n{prefix}-{env}-ukw-vault\n\nSecurity Controls as Applied to HMCTS Strategic @@@hl@@@IdAM@@@endhl@@@\n\nSTATUS",
+      "url": "/spaces/AD/pages/174489684/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F174489684%2F173932819%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM.pdf",
+      "resultParentContainer": {
+        "title": "ForgeSecOps: A robust model for security controls",
+        "displayUrl": "/spaces/AD/pages/174489684/ForgeSecOps%3A+A+robust+model+for+security+controls"
+      },
+      "resultGlobalContainer": { "title": "DevOps Competency", "displayUrl": "/spaces/AD" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-pdf",
+      "lastModified": "2017-12-13T20:49:52.512Z",
+      "friendlyLastModified": "13 Dec, 2017",
+      "score": 1.3853233
+    },
+    {
+      "content": {
+        "id": "att767426980",
+        "type": "attachment",
+        "status": "current",
+        "title": "Security Controls as Applied to HMCTS Strategic IdAM.pdf",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att767426980/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/FOR"
+        },
+        "_links": {
+          "webui": "/spaces/FOR/pages/767426971/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F767426971%2F767426980%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM.pdf",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att767426980"
+        }
+      },
+      "title": "Security Controls as Applied to HMCTS Strategic IdAM.pdf",
+      "excerpt": "Security Controls as Applied to HMCTS Strategic @@@hl@@@IdAM@@@endhl@@@\n\nSTATUS:\n\nDeveloped by Richard Slater\n\nTraffic Manager\n{prefix}-{env}-public-web-tm\n\nTraffic Manager &hellip;\nupgrade to seamlessly\nincrease security of\nhashed passwords.\nAzure Key Vault\n{prefix}-{env}-ukw-vault\n\nSecurity Controls as Applied to HMCTS Strategic @@@hl@@@IdAM@@@endhl@@@\n\nSTATUS",
+      "url": "/spaces/FOR/pages/767426971/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F767426971%2F767426980%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM.pdf",
+      "resultParentContainer": {
+        "title": "ForgeSecOps: A robust model for security controls",
+        "displayUrl": "/spaces/FOR/pages/767426971/ForgeSecOps%3A+A+robust+model+for+security+controls"
+      },
+      "resultGlobalContainer": {
+        "title": "Amido ForgeRock Community",
+        "displayUrl": "/spaces/FOR"
+      },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-pdf",
+      "lastModified": "2018-11-23T14:52:57.835Z",
+      "friendlyLastModified": "23 Nov, 2018",
+      "score": 1.3853233
+    },
+    {
+      "content": {
+        "id": "att175702017",
+        "type": "attachment",
+        "status": "current",
+        "title": "Security Controls as Applied to HMCTS Strategic IdAM - Control Model.png",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att175702017/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/AD"
+        },
+        "_links": {
+          "webui": "/spaces/AD/pages/174489684/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F174489684%2F175702017%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM+-+Control+Model.png",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att175702017"
+        }
+      },
+      "title": "Security Controls as Applied to HMCTS Strategic @@@hl@@@IdAM@@@endhl@@@ - Control Model.png",
+      "excerpt": "",
+      "url": "/spaces/AD/pages/174489684/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F174489684%2F175702017%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM+-+Control+Model.png",
+      "resultParentContainer": {
+        "title": "ForgeSecOps: A robust model for security controls",
+        "displayUrl": "/spaces/AD/pages/174489684/ForgeSecOps%3A+A+robust+model+for+security+controls"
+      },
+      "resultGlobalContainer": { "title": "DevOps Competency", "displayUrl": "/spaces/AD" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-image",
+      "lastModified": "2017-12-14T08:13:10.019Z",
+      "friendlyLastModified": "14 Dec, 2017",
+      "score": 1.1031685
+    },
+    {
+      "content": {
+        "id": "att767426977",
+        "type": "attachment",
+        "status": "current",
+        "title": "Security Controls as Applied to HMCTS Strategic IdAM - Control Model.png",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att767426977/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/FOR"
+        },
+        "_links": {
+          "webui": "/spaces/FOR/pages/767426971/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F767426971%2F767426977%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM+-+Control+Model.png",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att767426977"
+        }
+      },
+      "title": "Security Controls as Applied to HMCTS Strategic @@@hl@@@IdAM@@@endhl@@@ - Control Model.png",
+      "excerpt": "",
+      "url": "/spaces/FOR/pages/767426971/ForgeSecOps%3A+A+robust+model+for+security+controls?preview=%2F767426971%2F767426977%2FSecurity+Controls+as+Applied+to+HMCTS+Strategic+IdAM+-+Control+Model.png",
+      "resultParentContainer": {
+        "title": "ForgeSecOps: A robust model for security controls",
+        "displayUrl": "/spaces/FOR/pages/767426971/ForgeSecOps%3A+A+robust+model+for+security+controls"
+      },
+      "resultGlobalContainer": {
+        "title": "Amido ForgeRock Community",
+        "displayUrl": "/spaces/FOR"
+      },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-image",
+      "lastModified": "2018-11-23T14:52:57.518Z",
+      "friendlyLastModified": "23 Nov, 2018",
+      "score": 1.1031685
+    },
+    {
+      "content": {
+        "id": "752386051",
+        "type": "page",
+        "status": "current",
+        "title": "IDAM",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/752386051/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/CS"
+        },
+        "_links": {
+          "webui": "/spaces/CS/pages/752386051/IDAM",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/752386051",
+          "tinyui": "/x/A4DYL"
+        }
+      },
+      "title": "@@@hl@@@IDAM@@@endhl@@@",
+      "excerpt": "",
+      "url": "/spaces/CS/pages/752386051/IDAM",
+      "resultGlobalContainer": { "title": "Connected Services", "displayUrl": "/spaces/CS" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2018-11-15T08:46:48.889Z",
+      "friendlyLastModified": "15 Nov, 2018",
+      "score": 1.0861017
+    },
+    {
+      "content": {
+        "id": "att1166934060",
+        "type": "attachment",
+        "status": "current",
+        "title": "Identity Community - 4th meet-up.pptx",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/att1166934060/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/AIC"
+        },
+        "_links": {
+          "webui": "/spaces/AIC/pages/1101070456/Presentations?preview=%2F1101070456%2F1166934060%2FIdentity+Community+-+4th+meet-up.pptx",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/att1166934060"
+        }
+      },
+      "title": "Identity Community - 4th meet-up.pptx",
+      "excerpt": "Identity Community\n\n4th meet-up\n\nCONTENTS\n\nIntroduction\n@@@hl@@@IDAM@@@endhl@@@ for the IAG\n@@@hl@@@IDAM@@@endhl@@@ &amp; Data Engineering\nIndustry news\nNext steps\n\n2\n\nIntroductio\nn 1/2\nObjectives &hellip;\n• Pioneering\n• Agnostic\n• Refining\n\n4\n\n@@@hl@@@IDAM@@@endhl@@@ for the\nIAG\n\nArchitecture\noverview\n\n5\n\n@@@hl@@@IDAM@@@endhl@@@ for the\nIAG\n\n@@@hl@@@IDAM@@@endhl@@@ stack\n\n• Ping Identity (Identity Management)\n• Ping",
+      "url": "/spaces/AIC/pages/1101070456/Presentations?preview=%2F1101070456%2F1166934060%2FIdentity+Community+-+4th+meet-up.pptx",
+      "resultParentContainer": {
+        "title": "Presentations",
+        "displayUrl": "/spaces/AIC/pages/1101070456/Presentations"
+      },
+      "resultGlobalContainer": { "title": "Amido Identity Community", "displayUrl": "/spaces/AIC" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "icon-file-powerpoint",
+      "lastModified": "2019-06-24T16:09:08.995Z",
+      "friendlyLastModified": "24 Jun, 2019",
+      "score": 1.0183963
+    },
+    {
+      "content": {
+        "id": "1166704641",
+        "type": "page",
+        "status": "current",
+        "title": "Overview",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/1166704641/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/RD"
+        },
+        "_links": {
+          "webui": "/spaces/RD/pages/1166704641/Overview",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/1166704641",
+          "tinyui": "/x/AYCKRQ"
+        }
+      },
+      "title": "Overview",
+      "excerpt": "Architecture overview\n\nThe HCP @@@hl@@@IDAM@@@endhl@@@ solution is composed of distributed applications providing identity and access management, governance, and privileged identity &hellip; shows the conceptual system context of @@@hl@@@IDAM@@@endhl@@@ and PIM. Information services for @@@hl@@@IDAM@@@endhl@@@, HCP and @@@hl@@@IDAM@@@endhl@@@ control planes and HCP security are shown. Key actors",
+      "url": "/spaces/RD/pages/1166704641/Overview",
+      "resultGlobalContainer": { "title": "Research and Development", "displayUrl": "/spaces/RD" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-07-05T11:07:35.239Z",
+      "friendlyLastModified": "05 Jul, 2019",
+      "score": 0.9871493
+    },
+    {
+      "content": {
+        "id": "903577620",
+        "type": "page",
+        "status": "current",
+        "title": "Setup of local environment",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/903577620/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/PROJ"
+        },
+        "_links": {
+          "webui": "/spaces/PROJ/pages/903577620/Setup+of+local+environment",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/903577620",
+          "tinyui": "/x/FIDbNQ"
+        }
+      },
+      "title": "Setup of local environment",
+      "excerpt": "Run @@@hl@@@IdAM@@@endhl@@@ against Local ForgeRock installation\n\nThis page supersedes e\n\nConfigure Docker locally\n\nThe first step is making sure Docker is installed on your &hellip; local configuration files in your IntelliJ IDEA projects\n\n@@@hl@@@idam@@@endhl@@@-api-parent\n\nClone the @@@hl@@@IdAM@@@endhl@@@ API project from https://git.reform.hmcts.net/idam/idam-api",
+      "url": "/spaces/PROJ/pages/903577620/Setup+of+local+environment",
+      "resultGlobalContainer": { "title": "Project Archive", "displayUrl": "/spaces/PROJ" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-02-08T13:38:15.594Z",
+      "friendlyLastModified": "08 Feb, 2019",
+      "score": 0.98097
+    },
+    {
+      "content": {
+        "id": "767361530",
+        "type": "comment",
+        "status": "current",
+        "title": "Re: Amido technology 101 courses",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/767361530/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/BAT"
+        },
+        "_links": {
+          "webui": "/spaces/BAT/pages/765198420/Amido+technology+101+courses?focusedCommentId=767361530#comment-767361530",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/767361530"
+        }
+      },
+      "title": "Re: Amido technology 101 courses",
+      "excerpt": "Just a minor comment on the brief above...\n\n&quot;...especially people new to the company who haven&#39;t worked on a, for instance, @@@hl@@@IDAM@@@endhl@@@ project before&quot;\n\nI&#39;d suggest &hellip; that it&#39;s anyone who hasn&#39;t worked on an @@@hl@@@IDAM@@@endhl@@@ project before (regardless of time at Amido).",
+      "url": "/spaces/BAT/pages/765198420/Amido+technology+101+courses?focusedCommentId=767361530#comment-767361530",
+      "resultParentContainer": {
+        "title": "Amido technology 101 courses",
+        "displayUrl": "/pages/viewpage.action?pageId=765198420"
+      },
+      "resultGlobalContainer": { "title": "A&X", "displayUrl": "/spaces/BAT" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-comment",
+      "lastModified": "2018-11-26T12:21:55.576Z",
+      "friendlyLastModified": "26 Nov, 2018",
+      "score": 0.959704
+    },
+    {
+      "content": {
+        "id": "1166868550",
+        "type": "page",
+        "status": "current",
+        "title": "2019-06-25 Meeting notes",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/1166868550/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/AIC"
+        },
+        "_links": {
+          "webui": "/spaces/AIC/pages/1166868550/2019-06-25+Meeting+notes",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/1166868550",
+          "tinyui": "/x/RgCNRQ"
+        }
+      },
+      "title": "2019-06-25 Meeting notes",
+      "excerpt": "&#39;\n\n\n\n\nNikola Naydenov  \n\n\n\n\n“OIDC for the HMCTS @@@hl@@@IDAM@@@endhl@@@”\n\n\n\nAdded on top of the existing OAuth2 provider, backed by on-prem ForgeRock\n\n\n\nOIDC can &hellip;\n\n\n\n\n\n\n\n20&#39;\n\n\n\nHenry Dobson  \n\n\n\n“Multiple AWS accounts strategy”\n\n\n\nImplemented as a security control and governance for the IAG @@@hl@@@IDAM@@@endhl@@@\n\n\n\nCan",
+      "url": "/spaces/AIC/pages/1166868550/2019-06-25+Meeting+notes",
+      "resultGlobalContainer": { "title": "Amido Identity Community", "displayUrl": "/spaces/AIC" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-08-13T14:57:10.937Z",
+      "friendlyLastModified": "13 Aug, 2019",
+      "score": 0.9438694
+    },
+    {
+      "content": {
+        "id": "1100873775",
+        "type": "page",
+        "status": "current",
+        "title": "IdAM Vendors",
+        "childTypes": {},
+        "macroRenderedOutput": {},
+        "restrictions": {},
+        "_expandable": {
+          "container": "",
+          "metadata": "",
+          "extensions": "",
+          "operations": "",
+          "children": "",
+          "history": "/rest/api/content/1100873775/history",
+          "ancestors": "",
+          "body": "",
+          "version": "",
+          "descendants": "",
+          "space": "/rest/api/space/AIC"
+        },
+        "_links": {
+          "webui": "/spaces/AIC/pages/1100873775/IdAM+Vendors",
+          "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/content/1100873775",
+          "tinyui": "/x/LwCeQQ"
+        }
+      },
+      "title": "@@@hl@@@IdAM@@@endhl@@@ Vendors",
+      "excerpt": "This could be similar to the scoring criteria for identity providers. However it is for internal education without weighting from clients.\n\nLet&#39;s treat this as a living document and keep it up to date.\n\n\n\n\n\nClients\n\n\n\n\nVendor\n\nClients\n\n\n\nAuth0\n\nNotting Hill\n\n\n\nForgeRock\n\nBBC, NHS, MOD, MOJ\n\n\n\nSAP Customer Data",
+      "url": "/spaces/AIC/pages/1100873775/IdAM+Vendors",
+      "resultGlobalContainer": { "title": "Amido Identity Community", "displayUrl": "/spaces/AIC" },
+      "breadcrumbs": [],
+      "entityType": "content",
+      "iconCssClass": "aui-iconfont-page-default",
+      "lastModified": "2019-06-07T14:16:18.591Z",
+      "friendlyLastModified": "07 Jun, 2019",
+      "score": 0.9277353
+    }
+  ],
+  "start": 0,
+  "limit": 25,
+  "size": 25,
+  "totalSize": 108,
+  "cqlQuery": "text~idam",
+  "searchDuration": 162,
+  "_links": {
+    "base": "https://amidodevelopment.atlassian.net/wiki",
+    "context": "/wiki",
+    "next": "/rest/api/search?next=true&limit=25&start=25&cql=text~idam",
+    "self": "https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~idam"
+  }
+}

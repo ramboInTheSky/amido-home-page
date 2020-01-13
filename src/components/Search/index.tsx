@@ -11,9 +11,8 @@ type SearchProps = {
 
 const Search = ({ callback }: SearchProps) => {
   const [value, setValue] = useState('')
-
   const handleSearch = async () => {
-    const res: { data: { results: [] } } = await axios.get('/allspaces.json')
+    const res: { data: { results: [] } } = await axios.get(`/search?term=${value}`)
     callback(res.data.results)
   }
   const handleKeyPress = (e: any) => {
