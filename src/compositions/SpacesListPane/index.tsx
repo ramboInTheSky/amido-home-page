@@ -2,6 +2,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import AnimateHeight from 'react-animate-height'
+import Loader from 'react-loader-spinner'
 import { Box } from '../../components/SharedStyledComponents'
 import SpacesList from '../../components/SpacesList'
 
@@ -16,19 +17,23 @@ const SpacesListPane = ({ spaceKey = '' }: SpacesListProps) => {
 
   useEffect(() => {
     async function fetchData() {
-      const res: { data: { results: [] } } = await axios.get('/allspaces')
+      const res: { data: { results: [] } } = await axios.get('/allspaces') //use spaceKey here
       setResults(res.data.results)
     }
     fetchData()
     return function cleanup() {
       console.log('the SpacesList component has unmounted')
     }
-  }, [spaceKey])
+  }, [])
 
   return (
     <Box>
-      <AnimateHeight duration={300} height={results.length * 20}>
-        <SpacesList results={results} />
+      <AnimateHeight duration={300} height={results.length ? results.length * 20 : 50} delay={50}>
+        {results.length !== 0 ? (
+          <SpacesList results={results} />
+        ) : (
+            <Loader type="ThreeDots" color="#00BFFF" height={40} width={40} timeout={3000} />
+        )}
       </AnimateHeight>
     </Box>
   )
