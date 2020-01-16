@@ -4,6 +4,7 @@ import ClearIcon from '@material-ui/icons/Clear'
 import SearchIcon from '@material-ui/icons/Search'
 import axios from 'axios'
 import React, { useState } from 'react'
+import endpoints from '../../constants/apis'
 
 type SearchProps = {
   callback: (data: []) => void
@@ -12,7 +13,7 @@ type SearchProps = {
 const Search = ({ callback }: SearchProps) => {
   const [value, setValue] = useState('')
   const handleSearch = async () => {
-    const res: { data: { results: [] } } = await axios.get(`/search?term=${value}`)
+    const res: { data: { results: [] } } = await axios.get(`${endpoints.search}?term=${value}`)
     callback(res.data.results)
   }
   const handleKeyPress = (e: any) => {

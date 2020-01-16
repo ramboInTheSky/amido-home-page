@@ -1,10 +1,9 @@
 // import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-import AnimateHeight from 'react-animate-height'
 import Search from '../../components/Search'
 import SearchResults from '../../components/SearchResults'
 import { Box } from '../../components/SharedStyledComponents'
-import theme, { remToNumber } from '../../theme'
+
 
 type SearchPaneProps = {}
 
@@ -34,16 +33,15 @@ const SearchPane = (props: SearchPaneProps) => {
   return (
     <Box>
       <Search callback={setResults} />
-      <AnimateHeight duration={300} height={results.length * remToNumber(theme.resultLineHeight)}>
-        {/* <motion.div
+
+      {/* <motion.div
       style={{maxHeight: '300px'}}
         initial={'collapsed'}
         animate={collapsed ? 'collapsed' : 'expanded'}
         variants={ContentVariants}
       > */}
-        <SearchResults results={results} />
-        {/* </motion.div> */}
-      </AnimateHeight>
+      <SearchResults results={results} />
+      {/* </motion.div> */}
     </Box>
   )
 }

@@ -16,7 +16,10 @@ const port = 8080
 const logger = morgan('dev')
 const isDeveloping = process.env.NODE_ENV && process.env.NODE_ENV === 'development'
 
-const AuthStr = 'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
+const confluenceAuthStr =
+  'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
+const linkedingClientID = '86ka3ra76sakrf'
+const linkedinClientSecret = '4SAvsvKs4htd3zrz'
 
 const parseResponse = (req, res) => {
   if (!isDeveloping) {
@@ -49,7 +52,7 @@ app.use((error, req, res, next) => {
   }
 })
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '1'
 
 app.get('/user', (req, res) => res.send(req.user))
 app.get('/', parseResponse)
@@ -65,11 +68,28 @@ if (isDeveloping) {
   app.use(express.static(path.resolve(__dirname, './build')))
 }
 
+const getLinkedinAccessToken = async function() {
+  try {
+    const { access_token } = await axios.post(
+      `https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=${linkedingClientID}&client_secret=${linkedinClientSecret}`
+    ) 
+    const redUri = encodeURIComponent('https://localhost:3000')
+    // const res= await axios.post(
+    //   `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${linkedingClientID}&redirect_uri=${redUri}&state=1234567890`
+    // )
+    
+    console.log('linkedin access token', access_token)
+    return access_token
+  } catch (e) {
+    console.log('porca troia', e.response.data)
+  }
+}
+
 app.get('/allspaces', (req, res) => {
   axios
     .get('https://amidodevelopment.atlassian.net/wiki/rest/api/space', {
       headers: {
-        Authorization: AuthStr,
+        Authorization: confluenceAuthStr,
         'X-Atlassian-Token': 'no-check',
       },
     })
@@ -86,7 +106,7 @@ app.get('/search', (req, res) => {
   axios
     .get(`https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~${searchTerm}`, {
       headers: {
-        Authorization: AuthStr,
+        Authorization: confluenceAuthStr,
         'X-Atlassian-Token': 'no-check',
       },
     })
@@ -97,5 +117,24 @@ app.get('/search', (req, res) => {
       console.log(error)
     })
 })
+
+app.get('/linkedin', async (req, res) => {
+  const token = await getLinkedinAccessToken()
+  axios
+    .get(`https://api.linkedin.com/v2/me`, {
+      headers: {
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+    })
+    .then(response => {
+      res.send(response.data)
+    })
+    .catch(error => {
+      console.log(error.response.data)
+    })
+})
+
+
 
 app.listen(port)

@@ -10,7 +10,7 @@ type HomePageProps = {}
 const HomePage = (props: HomePageProps) => {
   setTimeout(() => {
     const element = document.querySelector('#twitter-widget-0') as any
-    element?.contentDocument.getElementsByTagName('footer')[0].remove()
+    element?.contentDocument.getElementsByTagName('footer')[0]?.remove()
   }, 500)
   return (
     <Layout>

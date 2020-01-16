@@ -5,6 +5,7 @@ import AnimateHeight from 'react-animate-height'
 import Loader from 'react-loader-spinner'
 import { Box } from '../../components/SharedStyledComponents'
 import SpacesList from '../../components/SpacesList'
+import endpoints from '../../constants/apis'
 
 type SpacesListProps = {
   spaceKey?: string
@@ -17,10 +18,15 @@ const SpacesListPane = ({ spaceKey = '' }: SpacesListProps) => {
 
   useEffect(() => {
     async function fetchData() {
-      const res: { data: { results: [] } } = await axios.get('/allspaces') //use spaceKey here
+      const res: { data: { results: [] } } = await axios.get(`${endpoints.allSpaces}`) //use spaceKey here
       setResults(res.data.results)
     }
+    // async function fetchDataLinkedin() {
+    //   const res: { data: { results: [] } } = await axios.get('/linkedin') //use spaceKey here
+    //   console.log('linkedin', res.data.results)
+    // }
     fetchData()
+    // fetchDataLinkedin()
     return function cleanup() {
       console.log('the SpacesList component has unmounted')
     }

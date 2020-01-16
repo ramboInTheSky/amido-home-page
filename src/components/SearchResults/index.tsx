@@ -1,4 +1,7 @@
 import React from 'react'
+import theme, { remToNumber } from '../../theme'
+import ResultItem from '../ResultItem'
+import { SearchResultsComponent } from './components'
 
 type SearchResultsProps = {
   results: []
@@ -6,19 +9,17 @@ type SearchResultsProps = {
 
 const SearchResults = ({ results }: SearchResultsProps) => {
   return (
-    <ul>
-      {results.length !== 0 && results.map((item: any) => (
-        <li key={item.content.id}>
-          <a
-            href={`https://amidodevelopment.atlassian.net/wiki${item.content._links.webui}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.content.title}
-          </a>
-        </li>
-      ))}
-    </ul>
+    <SearchResultsComponent duration={300} height={results.length * remToNumber(theme.resultLineHeight)}>
+      <ul>
+        {results.length !== 0 &&
+          results.map((item: any) => (
+            <li key={item.content.id}>
+              {item.id}
+              <ResultItem data={item} />{' '}
+            </li>
+          ))}
+      </ul>
+    </SearchResultsComponent>
   )
 }
 
