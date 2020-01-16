@@ -5,6 +5,9 @@ export const HomePageWrapper = styled.div`
   grid-template-columns: 6fr 2fr;
   align-items: flex-start;
   grid-gap: 1rem;
+  @media (max-width: 1200px) {
+    grid-template-columns: 1fr;
+  }
 `
 
 export const Col = styled.div`

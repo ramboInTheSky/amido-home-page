@@ -33,7 +33,6 @@ const HomePage = (props: HomePageProps) => {
             <a
               className="twitter-timeline"
               data-height="700"
-              data-width="400"
               href="https://twitter.com/WeAreAmido?ref_src=twsrc%5Etfw"
             />
           </Row>
