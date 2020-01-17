@@ -1,7 +1,7 @@
 import React from 'react'
 import theme, { remToNumber } from '../../theme'
 import ResultItem from '../ResultItem'
-import { SearchResultsComponent } from './components'
+import { List, SearchResultsComponent } from './components'
 
 type SearchResultsProps = {
   results: []
@@ -9,8 +9,11 @@ type SearchResultsProps = {
 
 const SearchResults = ({ results }: SearchResultsProps) => {
   return (
-    <SearchResultsComponent duration={300} height={results.length * remToNumber(theme.resultLineHeight)}>
-      <ul>
+    <SearchResultsComponent
+      duration={300}
+      height={results.length * remToNumber(theme.resultLineHeight)}
+    >
+      <List>
         {results.length !== 0 &&
           results.map((item: any) => (
             <li key={item.content.id}>
@@ -18,7 +21,7 @@ const SearchResults = ({ results }: SearchResultsProps) => {
               <ResultItem data={item} />{' '}
             </li>
           ))}
-      </ul>
+      </List>
     </SearchResultsComponent>
   )
 }

@@ -1533,6 +1533,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-loader-spinner@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@types/react-loader-spinner/-/react-loader-spinner-3.1.0.tgz#87100b00f9052395dfd27ec762713c32dd7e6f9e"
+  integrity sha512-gqxW+lmItQYnPiAoyvgg5X89ZsUVQ5SwzFieFPcmr13wQ9kahq448267Qj8HsrrGn1ON1hboFPPbpee4eU28Dg==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-native@*":
   version "0.60.30"
   resolved "https://registry.yarnpkg.com/@types/react-native/-/react-native-0.60.30.tgz#33ab525194142a5e3b428e60f0e77e0d1dbd253d"
@@ -2294,7 +2301,7 @@ babel-plugin-named-asset-import@^0.3.5:
   resolved "https://registry.yarnpkg.com/babel-plugin-named-asset-import/-/babel-plugin-named-asset-import-0.3.5.tgz#d3fa1a7f1f4babd4ed0785b75e2f926df0d70d0d"
   integrity sha512-sGhfINU+AuMw9oFAdIn/nD5sem3pn/WgxAfDZ//Q3CnF+5uaho7C7shh2rKLk6sKE/XkfmyibghocwKdVjLIKg==
 
-"babel-plugin-styled-components@>= 1":
+"babel-plugin-styled-components@>= 1", babel-plugin-styled-components@^1.10.6:
   version "1.10.6"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.10.6.tgz#f8782953751115faf09a9f92431436912c34006b"
   integrity sha512-gyQj/Zf1kQti66100PhrCRjI5ldjaze9O0M3emXRPAN80Zsf8+e1thpTpaXJXVHXtaM4/+dJEgZHyS9Its+8SA==
@@ -9454,6 +9461,14 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.0, react-is@^16.8.1, react-is
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.12.0.tgz#2cc0fe0fba742d97fd527c42a13bec4eeb06241c"
   integrity sha512-rPCkf/mWBtKc97aLL9/txD8DZdemK0vkA3JMLShjlJB3Pj3s+lpf1KaBzMfQrAmhMQB0n1cU/SUGgKKBCe837Q==
+
+react-loader-spinner@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.yarnpkg.com/react-loader-spinner/-/react-loader-spinner-3.1.5.tgz#e9a40c6032fddf0eba319e525cc613c5d698e4f9"
+  integrity sha512-617hOJtzFqQDs9OT/zLzdyvlCcb6m07xz/tOoZcVAeb/yiwstrz3nulzpKkwYL3c/3+l5IZJNGl1Bm5fLy6uYg==
+  dependencies:
+    babel-runtime "^6.26.0"
+    prop-types "^15.6.2"
 
 react-router-dom@^5.1.2:
   version "5.1.2"
