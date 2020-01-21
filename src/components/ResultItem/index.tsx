@@ -1,8 +1,9 @@
 import AttachFileOutlinedIcon from '@material-ui/icons/AttachFileOutlined'
 import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined'
 import FolderOpenOutlinedIcon from '@material-ui/icons/FolderOpenOutlined'
+import SpeakerNotesOutlinedIcon from '@material-ui/icons/SpeakerNotesOutlined'
 import React from 'react'
-import { HeadingLine, SubHeadingLine } from './components'
+import { HeadingLine, Line, SubHeadingLine } from './components'
 
 type ResultItemProps = {
   data: any
@@ -14,6 +15,8 @@ const Icon = (props: any) => {
       return <AttachFileOutlinedIcon />
     case 'page':
       return <DescriptionOutlinedIcon />
+    case 'comment':
+      return <SpeakerNotesOutlinedIcon />
     default:
       return <FolderOpenOutlinedIcon />
   }
@@ -23,23 +26,23 @@ const ResultItem = ({ data }: ResultItemProps) => {
   return (
     <>
       <HeadingLine>
-        <a
+        <Line
           href={`https://amidodevelopment.atlassian.net/wiki${data.content._links.webui}`}
           target="_blank"
           rel="noopener noreferrer"
         >
           <Icon type={data.content.type} />
           {data.content.title}
-        </a>
+        </Line>
         {data.resultGlobalContainer?.displayUrl && (
           <>
             <SubHeadingLine>
               <Icon />
-              <a
+              <Line
                 href={`https://amidodevelopment.atlassian.net/wiki${data.resultGlobalContainer.displayUrl}`}
               >
                 {data.resultGlobalContainer.title}
-              </a>
+              </Line>
             </SubHeadingLine>
             <SubHeadingLine style={{ marginLeft: '1rem' }}>
               {' '}

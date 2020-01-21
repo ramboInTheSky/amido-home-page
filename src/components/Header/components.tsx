@@ -9,7 +9,7 @@ export const HeaderWrapper = styled.div`
 `
 
 export const Logo = styled.div`
-  background-image: url('https://amidodevelopment.atlassian.net/wiki/download/attachments/360449/atl.site.logo?version=1&modificationDate=1564483216016&cacheVersion=1&api=v2');
+  background-image: url('https://amido.com/app/themes/e3creative/dist/images/logo-brand.svg');
   background-size: 100px;
   width: 8rem;
   background-repeat: no-repeat;

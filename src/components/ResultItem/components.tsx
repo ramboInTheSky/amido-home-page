@@ -11,3 +11,7 @@ export const SubHeadingLine = styled.span`
   opacity: 0.5;
   margin-left: 1rem;
 `
+
+export const Line = styled.a`
+  display: flex;
+`

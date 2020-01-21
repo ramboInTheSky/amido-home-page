@@ -4,7 +4,6 @@ import Search from '../../components/Search'
 import SearchResults from '../../components/SearchResults'
 import { Box } from '../../components/SharedStyledComponents'
 
-
 type SearchPaneProps = {}
 
 // export const ContentVariants = {
@@ -27,12 +26,26 @@ type SearchPaneProps = {}
 // }
 
 const SearchPane = (props: SearchPaneProps) => {
-  const defaultValue: [] = []
-  const [results, setResults] = useState(defaultValue)
+  const defaultValue: {
+    results: [],
+    filters: any
+  } = {
+    results: [],
+    filters: {
+      comments: true,
+      attachments: true,
+      pages: true,
+    },
+  }
+  const [state, setState] = useState(defaultValue)
+
+  const callback = (results: [], filters: any) => {
+    setState({ results, filters })
+  }
   //   const collapsed = results.length === 0
   return (
     <Box>
-      <Search callback={setResults} />
+      <Search callback={callback} />
 
       {/* <motion.div
       style={{maxHeight: '300px'}}
@@ -40,7 +53,7 @@ const SearchPane = (props: SearchPaneProps) => {
         animate={collapsed ? 'collapsed' : 'expanded'}
         variants={ContentVariants}
       > */}
-      <SearchResults results={results} />
+      <SearchResults results={state.results} filters={state.filters} />
       {/* </motion.div> */}
     </Box>
   )

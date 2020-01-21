@@ -4,7 +4,8 @@ export type Theme = {
 
 export const theme: Theme = {
   gutter: '1rem',
-  resultLineHeight: '1.3rem',
+  resultLineHeight: '2rem',
+  searchBoxHeight: '45rem',
   borderRadius: '0.5rem'
 }
 
