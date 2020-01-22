@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import Layout from '../../components/PageLayout'
+import UsefulApps from '../../components/UsefulApps'
 import SearchPane from '../../compositions/SearchPane'
 import SpacesList from '../../compositions/SpacesListPane'
 import { Col, HomePageWrapper, Row } from './components'
@@ -11,7 +12,7 @@ const HomePage = (props: HomePageProps) => {
   setTimeout(() => {
     const element = document.querySelector('#twitter-widget-0') as any
     element?.contentDocument.getElementsByTagName('footer')[0]?.remove()
-  }, 500)
+  }, 1000)
   return (
     <Layout>
       <HomePageWrapper className="mainContainer">
@@ -21,7 +22,6 @@ const HomePage = (props: HomePageProps) => {
           </Row>
           <Row>
             <SpacesList />
-            <SpacesList />
           </Row>
           <Row>
             <SpacesList />
@@ -29,6 +29,9 @@ const HomePage = (props: HomePageProps) => {
           </Row>
         </Col>
         <Col className="rightCol">
+          <Row>
+            <UsefulApps />
+          </Row>
           <Row>
             <a
               className="twitter-timeline"

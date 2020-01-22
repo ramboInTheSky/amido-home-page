@@ -1,3 +1,4 @@
+import { Grid } from '@material-ui/core'
 import AttachFileOutlinedIcon from '@material-ui/icons/AttachFileOutlined'
 import DescriptionOutlinedIcon from '@material-ui/icons/DescriptionOutlined'
 import FolderOpenOutlinedIcon from '@material-ui/icons/FolderOpenOutlined'
@@ -26,28 +27,39 @@ const ResultItem = ({ data }: ResultItemProps) => {
   return (
     <>
       <HeadingLine>
-        <Line
-          href={`https://amidodevelopment.atlassian.net/wiki${data.content._links.webui}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon type={data.content.type} />
-          {data.content.title}
-        </Line>
+        <Grid container spacing={0} alignItems="center">
+          <Grid item>
+            <Icon type={data.content.type} />
+          </Grid>
+          <Grid item>
+            <Line
+              href={`https://amidodevelopment.atlassian.net/wiki${data.content._links.webui}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {data.content.title}
+            </Line>
+          </Grid>
+        </Grid>
         {data.resultGlobalContainer?.displayUrl && (
           <>
-            <SubHeadingLine>
-              <Icon />
-              <Line
-                href={`https://amidodevelopment.atlassian.net/wiki${data.resultGlobalContainer.displayUrl}`}
-              >
-                {data.resultGlobalContainer.title}
-              </Line>
-            </SubHeadingLine>
-            <SubHeadingLine style={{ marginLeft: '1rem' }}>
-              {' '}
-              Last updated: {new Date(data.lastModified).toDateString()}
-            </SubHeadingLine>
+            <Grid container spacing={0} alignItems="center">
+              <SubHeadingLine>
+                <Grid item>
+                  <Icon />
+                </Grid>
+                <Grid item>
+                  <Line
+                    href={`https://amidodevelopment.atlassian.net/wiki${data.resultGlobalContainer.displayUrl}`}
+                  >
+                    {data.resultGlobalContainer.title}
+                  </Line>
+                </Grid>
+                <Grid item>
+                  <div style={{marginLeft: '0.5rem'}}>Last updated: {new Date(data.lastModified).toDateString()}</div>
+                </Grid>
+              </SubHeadingLine>
+            </Grid>
           </>
         )}
       </HeadingLine>

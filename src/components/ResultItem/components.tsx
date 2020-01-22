@@ -5,13 +5,15 @@ export const HeadingLine = styled.h3`
   flex-direction: column;
 `
 
-export const SubHeadingLine = styled.span`
+export const SubHeadingLine = styled.div`
   font-size: smaller;
   display: flex;
   opacity: 0.5;
   margin-left: 1rem;
+  line-height: 1.8rem;
 `
 
 export const Line = styled.a`
-  display: flex;
+  /* line-height: 1.8rem; */
+  text-decoration: none;
 `

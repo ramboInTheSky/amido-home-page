@@ -7,7 +7,7 @@ const Header = (props: HeaderProps) => {
   return (
     <HeaderWrapper>
       <Logo />
-      <Title> EMPLOYEE HOME PAGE YO! </Title>
+      <Title> Yo! Here what's been happening lately... </Title>
     </HeaderWrapper>
   )
 }

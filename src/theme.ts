@@ -6,7 +6,10 @@ export const theme: Theme = {
   gutter: '1rem',
   resultLineHeight: '2rem',
   searchBoxHeight: '45rem',
-  borderRadius: '0.5rem'
+  borderRadius: '0.5rem',
+  darkestColor: '#212121',
+  amidoColor: '#fecb07',
+  separator: '#0f46641f',
 }
 
 export const remToNumber = (rem: string) => {
