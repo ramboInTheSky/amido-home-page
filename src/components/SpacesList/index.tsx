@@ -1,24 +1,26 @@
 import React from 'react'
+import { SpaceLink, SpacesContainer } from './components'
 
 type SpacesListProps = {
-  results: []
+  results: any[]
+  colspan?: number
 }
 
-const SpacesList = ({ results }: SpacesListProps) => {
+const SpacesList = ({ results, colspan = 2 }: SpacesListProps) => {
   return (
-    <ul>
+    <SpacesContainer>
       {results.map((item: any) => (
-        <li key={item.id}>
-          <a
-            href={`https://amidodevelopment.atlassian.net/wiki${item._links.webui}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {item.name}
-          </a>
-        </li>
+        <SpaceLink
+          columns={colspan}
+          key={item.id}
+          href={`https://amidodevelopment.atlassian.net/wiki${item._links.webui}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {item.name}
+        </SpaceLink>
       ))}
-    </ul>
+    </SpacesContainer>
   )
 }
 

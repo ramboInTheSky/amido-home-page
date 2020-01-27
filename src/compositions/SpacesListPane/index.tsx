@@ -34,7 +34,7 @@ const SpacesListPane = ({ spaceKey = '' }: SpacesListProps) => {
 
   return (
     <Box>
-      <AnimateHeight duration={300} height={results.length ? results.length * 10 : 50} delay={50}>
+      <AnimateHeight duration={300} height={results.length ? results.length * 42 : 50} delay={50}>
         {results.length !== 0 ? (
           <SpacesList results={results} />
         ) : (

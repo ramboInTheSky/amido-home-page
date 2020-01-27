@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import Layout from '../../components/PageLayout'
+import { Box } from '../../components/SharedStyledComponents'
 import UsefulApps from '../../components/UsefulApps'
+import ContentPane from '../../compositions/ContentPane'
 import SearchPane from '../../compositions/SearchPane'
 import SpacesList from '../../compositions/SpacesListPane'
 import { Col, HomePageWrapper, Row } from './components'
-import { Box } from '../../components/SharedStyledComponents'
 
 type HomePageProps = {}
 
@@ -23,8 +24,66 @@ const setDeferredIframeStyle = () => {
   parent?.style?.setProperty('display', 'block')
 }
 
+const items = [
+  {
+    id: 1,
+    type: 'lallero',
+    key: 'AC',
+    name: 'Amido Academy 1',
+    _links: {
+      webui: '/spaces/AC1',
+    },
+  },
+  {
+    id: 2,
+    type: 'lallero',
+    key: 'AC',
+    name: 'Amido Academy2',
+    _links: {
+      webui: '/spaces/AC2',
+    },
+  },
+  {
+    id: 3,
+    type: 'lallero',
+    key: 'AC',
+    name: 'Amido Academy2',
+    _links: {
+      webui: '/spaces/AC2',
+    },
+  },
+  {
+    id: 11,
+    type: 'lallero',
+    key: 'AC',
+    name: 'Amido Academy 1',
+    _links: {
+      webui: '/spaces/AC1',
+    },
+  },
+  {
+    id: 12,
+    type: 'lallero',
+    key: 'AC',
+    name: 'Amido Academy2',
+    _links: {
+      webui: '/spaces/AC2',
+    },
+  },
+  {
+    id: 13,
+    type: 'lallero',
+    key: 'AC',
+    name: 'Amido Academy2',
+    _links: {
+      webui: '/spaces/AC2',
+    },
+  },
+]
+
 const HomePage = (props: HomePageProps) => {
   setTimeout(setDeferredIframeStyle, 1500)
+
   return (
     <Layout>
       <HomePageWrapper className="mainContainer">
@@ -33,12 +92,16 @@ const HomePage = (props: HomePageProps) => {
             <SearchPane />
           </Row>
           <Row>
-            <SpacesList />
+            <ContentPane spaceKey="Amido Work Life" results={items} colspan={3} />
           </Row>
           <Row>
-            <SpacesList />
-            <SpacesList />
-            <SpacesList />
+            <ContentPane spaceKey="Amido Work Life" results={items} colspan={2} />
+            <ContentPane spaceKey="Amido Work Life" results={items} colspan={2} />
+          </Row>
+          <Row>
+            <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
+            <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
+            <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
           </Row>
         </Col>
         <Col className="rightCol">

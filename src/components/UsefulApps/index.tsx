@@ -13,6 +13,10 @@ const UsefulApps = (props: UsefulAppsProps) => {
             Bob HR
             <Icon src={'/boblogo.png'} alt={'Bob HR'} title={'Bob HR'} />
         </App>
+        <App target="_blank" rel="noopener noreferrer" href={'https://go.accessacloud.com/'}>
+            Access
+          <Icon src={'/accesslogo.png'} alt={'Access'} title={'Access'} />
+        </App>
         <App target="_blank" rel="noopener noreferrer" href={'https://linkedin.com/'}>
             LinkedIn
           <Icon src={'/linkedinlogo.png'} alt={'Linkedin'} title={'Linkedin'} />
@@ -28,10 +32,6 @@ const UsefulApps = (props: UsefulAppsProps) => {
         <App target="_blank" rel="noopener noreferrer" href={'https://app2.greenhouse.io/dashboard'}>
             Greenhouse
           <Icon src={'/greenhouselogo.png'} alt={'Greenhouse'} title={'Greenhouse'} />
-        </App>
-        <App target="_blank" rel="noopener noreferrer" href={'https://go.accessacloud.com/'}>
-            Access
-          <Icon src={'/accesslogo.png'} alt={'Access'} title={'Access'} />
         </App>
       </AppsList>
     </Box>
