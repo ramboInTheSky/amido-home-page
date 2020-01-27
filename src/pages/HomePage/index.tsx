@@ -26,6 +26,7 @@ const HomePage = (props: HomePageProps) => {
           <Row>
             <SpacesList />
             <SpacesList />
+            <SpacesList />
           </Row>
         </Col>
         <Col className="rightCol">

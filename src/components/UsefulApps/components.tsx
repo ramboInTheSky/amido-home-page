@@ -22,6 +22,18 @@ export const AppsList = styled.div`
   justify-content: space-evenly;
 `
 
-export const App = styled.div`
-  margin-bottom: 0.5rem;
+export const App = styled.a`
+  margin-bottom: ${theme.minimumPadding};
+  margin-left: 3px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid ${theme.separator};
+  padding: ${theme.minimumPadding};
+  border-radius: ${theme.borderRadius};
+  -webkit-box-shadow: 0px 5px 16px -5px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 5px 16px -5px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 5px 16px -5px rgba(0, 0, 0, 0.75) !important;
+  color: ${theme.darkestColor};
 `

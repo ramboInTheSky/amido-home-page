@@ -14,6 +14,7 @@ export const PageContent = styled.div`
 
 export const Content = styled.section`
   padding: 0 calc(${theme.gutter} * 3) calc(${theme.gutter} * 3) calc(${theme.gutter} * 3);
+  /* margin-top: 6rem; */
 `
 
 export const Hero = styled.div`
@@ -24,7 +25,7 @@ export const Hero = styled.div`
   background-size: 120% 120%;
   background-repeat: no-repeat;
   z-index: 2;
-  position: absolute;
+  position: fixed;
   top:0;
   left: 0;
   right: 0;

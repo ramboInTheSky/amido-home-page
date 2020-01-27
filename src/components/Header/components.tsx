@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import theme from '../../theme'
 
 export const HeaderWrapper = styled.div`
   display: flex;
@@ -6,6 +7,13 @@ export const HeaderWrapper = styled.div`
   justify-content: flex-start;
   height: 3rem;
   padding: 1rem;
+  /* background-color: ${theme.darkestColor};
+  opacity: 0.9;
+  z-index: 200;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0; */
 `
 
 export const Logo = styled.div`
@@ -16,6 +24,6 @@ export const Logo = styled.div`
 `
 
 export const Title = styled.h1`
-    font-size: 2rem;
-    margin-top: 5px;
+  font-size: 2rem;
+  margin-top: 5px;
 `

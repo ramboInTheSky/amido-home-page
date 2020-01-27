@@ -10,6 +10,7 @@ export const theme: Theme = {
   darkestColor: '#212121',
   amidoColor: '#fecb07',
   separator: '#0f46641f',
+  minimumPadding: '0.5rem',
 }
 
 export const remToNumber = (rem: string) => {
