@@ -35,7 +35,7 @@ const Search = ({ callback }: SearchProps) => {
     const res: { data: { results: [] } } = await axios.get(`${endpoints.search}?term=${value}`)
     results = res.data.results
     setLoading(false)
-    console.log(res.data.results)
+    console.log(res)
     callback(res.data.results, state)
   }
   const handleKeyPress = (e: any) => {
