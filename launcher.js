@@ -135,22 +135,22 @@ app.get('/searchbylabel', (req, res) => {
     })
 })
 
-app.get('/linkedin', async (req, res) => {
-  const token = await getLinkedinAccessToken()
-  axios
-    .get(`https://api.linkedin.com/v2/me`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-    })
-    .then(response => {
-      res.send(response.data)
-    })
-    .catch(error => {
-      console.log(error.response.data)
-    })
-})
+// app.get('/linkedin', async (req, res) => {
+//   const token = await getLinkedinAccessToken()
+//   axios
+//     .get(`https://api.linkedin.com/v2/me`, {
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//         'Content-Type': 'application/x-www-form-urlencoded'
+//       },
+//     })
+//     .then(response => {
+//       res.send(response.data)
+//     })
+//     .catch(error => {
+//       console.log(error.response.data)
+//     })
+// })
 
 
 
