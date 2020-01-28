@@ -25,10 +25,10 @@ const DynamicContentPanePane = ({
 
   useEffect(() => {
     async function fetchData() {
-      const res: { data: { data: { results: [] } } } = await axios.get(
+      const res: { data: { results: [] } } = await axios.get(
         `${endpoints.searchByLabel}?label=portal-alessio`
       ) //use label here
-      setResults(res.data.data.results)
+      setResults(res.data.results)
     }
     fetchData()
     // fetchDataLinkedin()

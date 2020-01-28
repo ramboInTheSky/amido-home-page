@@ -32,12 +32,10 @@ const Search = ({ callback }: SearchProps) => {
   })
   const handleSearch = async () => {
     setLoading(true)
-    const res: { data: { data: { results: [] } } } = await axios.get(
-      `${endpoints.search}?term=${value}`
-    )
-    results = res.data.data.results
+    const res: { data: { results: [] } } = await axios.get(`${endpoints.search}?term=${value}`)
+    results = res.data.results
     setLoading(false)
-    callback(res.data.data.results, state)
+    callback(res.data.results, state)
   }
   const handleKeyPress = (e: any) => {
     if (e.keyCode === 13) {
