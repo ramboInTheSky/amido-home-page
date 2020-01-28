@@ -17,6 +17,11 @@ export const SpaceLink = styled.a<SpaceLinkProps>`
   padding: 1rem;
   padding-bottom: 2rem;
   font-size: 20px;
+  white-space:nowrap;
   text-decoration: none;
-  color: ${theme.darkestColor}
+  color: ${theme.darkestColor};
+  @media (max-width: 1200px) {
+    padding-bottom: 1rem;
+  }
+  
 `

@@ -1,14 +1,14 @@
 import FormControlLabel from '@material-ui/core/FormControlLabel'
-import FormGroup from '@material-ui/core/FormGroup'
 import Grid from '@material-ui/core/Grid'
 import Switch from '@material-ui/core/Switch'
-import TextField from '@material-ui/core/TextField'
 import ClearIcon from '@material-ui/icons/Clear'
 import SearchIcon from '@material-ui/icons/Search'
 import axios from 'axios'
 import React, { useState } from 'react'
+import Loader from 'react-loader-spinner'
 import endpoints from '../../constants/apis'
-import { SearchGrid } from './components'
+import theme from '../../theme'
+import { InputField, SearchGrid, ToggleGroup } from './components'
 
 type SearchProps = {
   callback: (
@@ -23,6 +23,7 @@ type SearchProps = {
 let results: [] = []
 const Search = ({ callback }: SearchProps) => {
   const [value, setValue] = useState('')
+  const [loading, setLoading] = useState(false)
 
   const [state, setState] = React.useState({
     comments: true,
@@ -30,8 +31,10 @@ const Search = ({ callback }: SearchProps) => {
     attachments: true,
   })
   const handleSearch = async () => {
+    setLoading(true)
     const res: { data: { results: [] } } = await axios.get(`${endpoints.search}?term=${value}`)
     results = res.data.results
+    setLoading(false)
     callback(res.data.results, state)
   }
   const handleKeyPress = (e: any) => {
@@ -58,10 +61,9 @@ const Search = ({ callback }: SearchProps) => {
 
   return (
     <SearchGrid>
-      <div></div>
       <Grid container spacing={1} alignItems="flex-end">
         <Grid item>
-          <TextField
+          <InputField
             id="input-with-icon-grid"
             label="Search Confluence"
             onKeyUp={handleKeyPress}
@@ -73,9 +75,10 @@ const Search = ({ callback }: SearchProps) => {
           {value && <ClearIcon onClick={clearSearch} />}
           <SearchIcon onClick={handleSearch} />
         </Grid>
+        {loading && <Loader type="ThreeDots" color={theme.darkestColor} height={30} width={30} timeout={3000} />}
       </Grid>
       <Grid>
-        <FormGroup row>
+        <ToggleGroup row>
           <FormControlLabel
             control={
               <Switch
@@ -112,7 +115,7 @@ const Search = ({ callback }: SearchProps) => {
             }
             label="Comments"
           />
-        </FormGroup>
+        </ToggleGroup>
       </Grid>
     </SearchGrid>
   )

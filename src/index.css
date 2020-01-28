@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'PlaylistCaps';
+  src: url('/PlaylistCaps.otf') format('opentype');
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
@@ -13,16 +18,9 @@ code {
 h1,
 h2,
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'PlaylistCaps', 'Montserrat', sans-serif;
 }
 
 * {
   font-family: 'Work Sans', sans-serif;
 }
-
-/* iframe .timeline-InformationCircle-widgetParent {
-  display: flex;
-  justify-content: center;
-  height: 2.3rem;
-  padding-top: 1.2rem;
-} */

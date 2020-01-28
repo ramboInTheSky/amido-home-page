@@ -1,8 +1,8 @@
 // import { motion } from 'framer-motion'
 import React, { useState } from 'react'
-import Search from '../../components/Search'
-import SearchResults from '../../components/SearchResults'
-import { Box } from '../../components/SharedStyledComponents'
+import { Box } from '../../components/Styled'
+import Search from '../Search'
+import SearchResults from '../SearchResults'
 
 type SearchPaneProps = {}
 

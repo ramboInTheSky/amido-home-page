@@ -2,8 +2,8 @@
 import React, { useState } from 'react'
 import AnimateHeight from 'react-animate-height'
 import Loader from 'react-loader-spinner'
-import { Box } from '../../components/SharedStyledComponents'
 import SpacesList from '../../components/SpacesList'
+import { Box } from '../../components/Styled'
 import { Header } from './components'
 
 type ContentPaneProps = {

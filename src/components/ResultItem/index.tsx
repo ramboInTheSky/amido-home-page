@@ -48,7 +48,7 @@ const ResultItem = ({ data }: ResultItemProps) => {
                 <Grid item>
                   <Icon />
                 </Grid>
-                <Grid item>
+                <Grid item >
                   <Line
                     href={`https://amidodevelopment.atlassian.net/wiki${data.resultGlobalContainer.displayUrl}`}
                   >

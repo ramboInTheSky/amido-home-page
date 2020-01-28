@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '../../components/SharedStyledComponents'
+import { Box } from '../../components/Styled'
 import { App, AppsList, Header, Icon } from './components'
 
 type UsefulAppsProps = {}

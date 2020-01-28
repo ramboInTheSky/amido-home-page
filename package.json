@@ -94,6 +94,7 @@
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
     "npm-watch": "^0.6.0",
+    "serverless": "^1.61.3",
     "tslint": "^5.20.1",
     "tslint-config-airbnb": "^5.11.2",
     "tslint-config-prettier": "^1.18.0",

@@ -26,3 +26,8 @@ export const Row = styled.div`
     margin-right: 1rem;
   }
 `
+
+export const Intro = styled.p`
+  text-align: center;
+  width: 100%;
+`

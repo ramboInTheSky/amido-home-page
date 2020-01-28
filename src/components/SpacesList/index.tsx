@@ -13,7 +13,7 @@ const SpacesList = ({ results, colspan = 2 }: SpacesListProps) => {
         <SpaceLink
           columns={colspan}
           key={item.id}
-          href={`https://amidodevelopment.atlassian.net/wiki${item._links.webui}`}
+          href={`https://amidodevelopment.atlassian.net/wiki${item._links?.webui}`}
           target="_blank"
           rel="noopener noreferrer"
         >

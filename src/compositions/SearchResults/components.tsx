@@ -12,9 +12,12 @@ export const List = styled.ul`
   list-style-type: none;
   padding-right: 2rem;
   & li {
-    border-radius: 5px;
-    background-color: #fecb074d;
+    margin-bottom: 2rem;
+    padding-left: 1rem;
     margin-bottom: 0.5rem;
-    padding: 1rem;
+    padding: 1rem; 
+    /* background-color: #fecb074d; */
+    border: 1px solid #fecb07;
+    border-radius: 5px;
   }
 `

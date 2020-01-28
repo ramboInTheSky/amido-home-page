@@ -1,28 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
 import Layout from '../../components/PageLayout'
-import { Box } from '../../components/SharedStyledComponents'
-import UsefulApps from '../../components/UsefulApps'
 import ContentPane from '../../compositions/ContentPane'
+import DynamicContentPane from '../../compositions/DynamicContentPane'
 import SearchPane from '../../compositions/SearchPane'
-import SpacesList from '../../compositions/SpacesListPane'
-import { Col, HomePageWrapper, Row } from './components'
+import TwitterPane from '../../compositions/TwitterPane'
+import UsefulApps from '../../compositions/UsefulApps'
+import { Col, HomePageWrapper, Intro, Row } from './components'
 
 type HomePageProps = {}
-
-const setDeferredIframeStyle = () => {
-  const element = document.querySelector('#twitter-widget-0') as any
-  const header = element?.contentDocument.querySelector('.timeline-InformationCircle-widgetParent')
-  element?.contentDocument.querySelector('.timeline-InformationCircle')?.remove()
-  const headerStyle = header?.style
-  headerStyle?.setProperty('display', 'flex')
-  headerStyle?.setProperty('justify-content', 'center')
-  headerStyle?.setProperty('height', '2.3rem')
-  headerStyle?.setProperty('padding-top', '1.2rem')
-  element?.contentDocument.getElementsByTagName('footer')[0]?.remove()
-  const parent = document.querySelector('.twitter-parent-box') as any
-  parent?.style?.setProperty('display', 'block')
-}
 
 const items = [
   {
@@ -82,12 +68,20 @@ const items = [
 ]
 
 const HomePage = (props: HomePageProps) => {
-  setTimeout(setDeferredIframeStyle, 1500)
 
   return (
     <Layout>
       <HomePageWrapper className="mainContainer">
         <Col className="leftCol">
+          <Row>
+            <Intro>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            </Intro>
+          </Row>
           <Row>
             <SearchPane />
           </Row>
@@ -103,19 +97,16 @@ const HomePage = (props: HomePageProps) => {
             <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
             <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
           </Row>
+          <Row>
+            <DynamicContentPane title={'Alessio is the best'} colspan={1} label={'portal-alessio'}/>
+          </Row>
         </Col>
         <Col className="rightCol">
           <Row>
             <UsefulApps />
           </Row>
           <Row>
-            <Box className="twitter-parent-box" style={{ display: 'none' }}>
-              <a
-                className="twitter-timeline"
-                data-height="700"
-                href="https://twitter.com/WeAreAmido?ref_src=twsrc%5Etfw"
-              />
-            </Box>
+            <TwitterPane />
           </Row>
           <Row>
             <iframe

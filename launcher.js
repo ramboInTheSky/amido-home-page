@@ -118,6 +118,23 @@ app.get('/search', (req, res) => {
     })
 })
 
+app.get('/searchbylabel', (req, res) => {
+  const label = req.query.label
+  axios
+    .get(`https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=label="${label}"`, {
+      headers: {
+        Authorization: confluenceAuthStr,
+        'X-Atlassian-Token': 'no-check',
+      },
+    })
+    .then(response => {
+      res.send(response.data)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+})
+
 app.get('/linkedin', async (req, res) => {
   const token = await getLinkedinAccessToken()
   axios

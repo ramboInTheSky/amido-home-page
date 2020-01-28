@@ -1,6 +1,6 @@
 import React from 'react'
 import theme, { remToNumber } from '../../theme'
-import ResultItem from '../ResultItem'
+import ResultItem from '../../components/ResultItem'
 import { List, SearchResultsComponent } from './components'
 
 type SearchResultsProps = {
