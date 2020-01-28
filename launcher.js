@@ -68,22 +68,22 @@ if (isDeveloping) {
   app.use(express.static(path.resolve(__dirname, './build')))
 }
 
-const getLinkedinAccessToken = async function() {
-  try {
-    const { access_token } = await axios.post(
-      `https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=${linkedingClientID}&client_secret=${linkedinClientSecret}`
-    ) 
-    const redUri = encodeURIComponent('https://localhost:3000')
-    // const res= await axios.post(
-    //   `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${linkedingClientID}&redirect_uri=${redUri}&state=1234567890`
-    // )
+// const getLinkedinAccessToken = async function() {
+//   try {
+//     const { access_token } = await axios.post(
+//       `https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=${linkedingClientID}&client_secret=${linkedinClientSecret}`
+//     ) 
+//     const redUri = encodeURIComponent('https://localhost:3000')
+//     // const res= await axios.post(
+//     //   `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${linkedingClientID}&redirect_uri=${redUri}&state=1234567890`
+//     // )
     
-    console.log('linkedin access token', access_token)
-    return access_token
-  } catch (e) {
-    console.log('porca troia', e.response.data)
-  }
-}
+//     console.log('linkedin access token', access_token)
+//     return access_token
+//   } catch (e) {
+//     console.log('porca troia', e.response.data)
+//   }
+// }
 
 app.get('/allspaces', (req, res) => {
   axios
