@@ -1,6 +1,6 @@
 const axios = require('axios')
 
-exports.handler = async event => {
+exports.handler = async (event, context, callback) => {
   const confluenceAuthStr =
     'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
   const searchTerm = event.queryStringParameters.term
@@ -12,10 +12,14 @@ exports.handler = async event => {
       },
     })
     .then(response => {
-      return {
-          status: 200,
-          body: response.data,
-      }
+        callback(null, {
+            statusCode: 200,
+            body: JSON.stringify({
+              status: 'SUCCESS',
+              message: '',
+              data: response.data
+            }),
+          });
     })
     .catch(error => {
       console.log(error)
