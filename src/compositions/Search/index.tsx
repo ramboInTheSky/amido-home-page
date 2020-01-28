@@ -32,11 +32,12 @@ const Search = ({ callback }: SearchProps) => {
   })
   const handleSearch = async () => {
     setLoading(true)
-    const res: { data: { results: [] } } = await axios.get(`${endpoints.search}?term=${value}`)
-    results = res.data.results
+    const res: { data: { data: { results: [] } } } = await axios.get(
+      `${endpoints.search}?term=${value}`
+    )
+    results = res.data.data.results
     setLoading(false)
-    console.log(res)
-    callback(res.data.results, state)
+    callback(res.data.data.results, state)
   }
   const handleKeyPress = (e: any) => {
     if (e.keyCode === 13) {
@@ -76,7 +77,15 @@ const Search = ({ callback }: SearchProps) => {
           {value && <ClearIcon onClick={clearSearch} />}
           <SearchIcon onClick={handleSearch} />
         </Grid>
-        {loading && <Loader type="ThreeDots" color={theme.darkestColor} height={30} width={30} timeout={3000} />}
+        {loading && (
+          <Loader
+            type="ThreeDots"
+            color={theme.darkestColor}
+            height={30}
+            width={30}
+            timeout={3000}
+          />
+        )}
       </Grid>
       <Grid>
         <ToggleGroup row>
