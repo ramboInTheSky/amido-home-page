@@ -26,7 +26,7 @@ const DailyQuote = () => {
       console.log('the DailyQuote component has unmounted')
     }
   }, [])
-  return (
+  return ( 
     <>
       {quote.quote && (
         <AnimatedContainer
