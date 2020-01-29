@@ -15,13 +15,12 @@ const DailyQuote = () => {
     quote: '',
   } as Quote)
   useEffect(() => {
-    async function fetchData() {
+    (async function fetchData() {
       const cachedData = getDataFromCache(apis.quote) // this returns data if it exists and it is not expired
       const res: { data: Quote } = cachedData ?? (await axios.get(apis.quote))
       setState(res.data)
       if(!cachedData) updateCache(apis.quote, res)
-    }
-    fetchData()
+    })()
     return function cleanup() {
       console.log('the DailyQuote component has unmounted')
     }
