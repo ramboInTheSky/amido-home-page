@@ -1,7 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react'
+import DailyQuote from '../../components/DailyQuote'
 import Layout from '../../components/PageLayout'
-import ContentPane from '../../compositions/ContentPane'
+// import ContentPane from '../../compositions/ContentPane'
 import DynamicContentPane from '../../compositions/DynamicContentPane'
 import SearchPane from '../../compositions/SearchPane'
 import TwitterPane from '../../compositions/TwitterPane'
@@ -68,7 +69,6 @@ type HomePageProps = {}
 // ]
 
 const HomePage = (props: HomePageProps) => {
-
   return (
     <Layout>
       <HomePageWrapper className="mainContainer">
@@ -86,22 +86,33 @@ const HomePage = (props: HomePageProps) => {
             <SearchPane />
           </Row>
           <Row>
-          <DynamicContentPane title={'Work Life'} colspan={3} label={'Portal-worklife'}/>
+            <DynamicContentPane title={'Work Life'} colspan={3} label={'Portal-worklife'} />
           </Row>
           <Row>
-            <DynamicContentPane title={'Projects'} colspan={1} label={'Portal-projects'}/>
-            <DynamicContentPane title={'Learning'} colspan={1} label={'Portal-learning'}/>
+            <DynamicContentPane title={'Projects'} colspan={1} label={'Portal-projects'} />
+            <DynamicContentPane title={'Learning'} colspan={1} label={'Portal-learning'} />
           </Row>
           <Row>
-          <DynamicContentPane title={'Domain Competencies'} colspan={1} label={'Portal-domaincompetency'}/>
-          <DynamicContentPane title={'Communities'} colspan={1} label={'Portal-communities'}/>
-          <DynamicContentPane title={'Events'} colspan={1} label={'Portal-events'}/>
+            <DynamicContentPane
+              title={'Domain Competencies'}
+              colspan={1}
+              label={'Portal-domaincompetency'}
+            />
+            <DynamicContentPane title={'Communities'} colspan={1} label={'Portal-communities'} />
+            <DynamicContentPane title={'Events'} colspan={1} label={'Portal-events'} />
           </Row>
           <Row>
-            <DynamicContentPane title={'Using Confluence'} colspan={1} label={'Portal-usingconfluence'}/>
+            <DynamicContentPane
+              title={'Using Confluence'}
+              colspan={1}
+              label={'Portal-usingconfluence'}
+            />
           </Row>
         </Col>
         <Col className="rightCol">
+          <Row>
+            <DailyQuote />
+          </Row>
           <Row>
             <UsefulApps />
           </Row>

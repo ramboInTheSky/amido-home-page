@@ -18,8 +18,7 @@ const isDeveloping = process.env.NODE_ENV && process.env.NODE_ENV === 'developme
 
 const confluenceAuthStr =
   'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
-const linkedingClientID = '86ka3ra76sakrf'
-const linkedinClientSecret = '4SAvsvKs4htd3zrz'
+const quotesToken = 'Token 19c1db548f6878076281957fa6fa1c668dc0726f'
 
 const parseResponse = (req, res) => {
   if (!isDeveloping) {
@@ -72,12 +71,12 @@ if (isDeveloping) {
 //   try {
 //     const { access_token } = await axios.post(
 //       `https://www.linkedin.com/oauth/v2/accessToken?grant_type=client_credentials&client_id=${linkedingClientID}&client_secret=${linkedinClientSecret}`
-//     ) 
+//     )
 //     const redUri = encodeURIComponent('https://localhost:3000')
 //     // const res= await axios.post(
 //     //   `https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=${linkedingClientID}&redirect_uri=${redUri}&state=1234567890`
 //     // )
-    
+
 //     console.log('linkedin access token', access_token)
 //     return access_token
 //   } catch (e) {
@@ -95,6 +94,22 @@ app.get('/allspaces', (req, res) => {
     })
     .then(response => {
       res.send(response.data)
+    })
+    .catch(error => {
+      console.log(error)
+    })
+})
+
+app.get('/quote', (req, res) => {
+  axios
+    .get('https://api.paperquotes.com/apiv1/quotes/', {
+      headers: {
+        Authorization: quotesToken,
+        'Content-Type': 'application/json'
+      },
+    })
+    .then(response => {
+      res.send(response.data.results)
     })
     .catch(error => {
       console.log(error)
@@ -151,7 +166,5 @@ app.get('/searchbylabel', (req, res) => {
 //       console.log(error.response.data)
 //     })
 // })
-
-
 
 app.listen(port)
