@@ -1,10 +1,12 @@
 export const productionAPIs = Object.freeze({
-  search: '/.netlify/functions/search',
+  quote: '/.netlify/functions/search',
+  search: '/.netlify/functions/quote',
   allSpaces: '/.netlify/functions/allspaces',
   searchByLabel: '/.netlify/functions/searchbylabel',
 })
 
 export const developmentAPIs = Object.freeze({
+  quote: '/quote',
   search: '/search',
   allSpaces: '/allspaces',
   searchByLabel: '/searchbylabel',

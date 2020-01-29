@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Quote } from './components'
+import apis from '../../constants/apis'
 // import { motion } from 'framer-motion'
 
 interface IQuote {
@@ -10,11 +11,10 @@ interface IQuote {
   background?: string
 }
 const DailyQuote = () => {
-  const [quote, setState] = useState({quote: ''} as IQuote)
+  const [quote, setState] = useState({ quote: '' } as IQuote)
   useEffect(() => {
     async function fetchData() {
-      const res: { data: IQuote } = await axios.get(`/quote`)
-      console.log(res.data)
+      const res: { data: IQuote } = await axios.get(apis.quote)
       setState(res.data)
     }
     fetchData()
@@ -25,8 +25,7 @@ const DailyQuote = () => {
   }, [])
   return (
     <Quote>
-        <p style={{ textAlign: 'center' }}>{quote.quote}</p>{' '}
-        <p style={{ textAlign: 'right' }}>{quote.author}</p>{' '}
+      <p>{quote.quote}</p> <p>{quote.author}</p>{' '}
     </Quote>
   )
 }
