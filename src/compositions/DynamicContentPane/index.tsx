@@ -9,14 +9,14 @@ import endpoints from '../../constants/apis'
 import { Header } from './components'
 
 type DynamicContentPaneProps = {
-  label?: string
-  title: string
+  label: string
+  title?: string
   colspan?: number
 }
 
 const DynamicContentPanePane = ({
-  label = '',
-  title = '',
+  label,
+  title = label.split('-')[1].toUpperCase(),
   colspan = 2,
 }: DynamicContentPaneProps) => {
   const defaultValue: [] = []
@@ -26,7 +26,7 @@ const DynamicContentPanePane = ({
   useEffect(() => {
     async function fetchData() {
       const res: { data: { results: [] } } = await axios.get(
-        `${endpoints.searchByLabel}?label=portal-alessio`
+        `${endpoints.searchByLabel}?label=${label}`
       ) //use label here
       setResults(res.data.results)
     }
@@ -39,7 +39,7 @@ const DynamicContentPanePane = ({
 
   return (
     <Box>
-      <Header>{title}</Header>
+      <Header>{title.toUpperCase()}</Header>
       <AnimateHeight
         duration={300}
         height={results.length > 1 ? results.length * 42 : 'auto'}

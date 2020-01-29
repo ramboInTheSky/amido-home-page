@@ -9,4 +9,5 @@ export const Header = styled.div`
   opacity: 0.9;
   color: ${theme.darkestColor};
   background-color: ${theme.amidoColor};
+  font-family: 'PlaylistCaps', 'Montserrat', sans-serif;
 `
