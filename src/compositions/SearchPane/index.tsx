@@ -38,14 +38,15 @@ const SearchPane = (props: SearchPaneProps) => {
     },
   }
   const [state, setState] = useState(defaultValue)
+  const [loading, setLoading] = useState(false)
 
   const callback = (results: [], filters: any) => {
     setState({ results, filters })
   }
   //   const collapsed = results.length === 0
   return (
-    <Box>
-      <Search callback={callback} />
+    <Box style={{minWidth: '900px'}}>
+      <Search callback={callback} setLoading={setLoading}/>
 
       {/* <motion.div
       style={{maxHeight: '300px'}}
@@ -53,7 +54,7 @@ const SearchPane = (props: SearchPaneProps) => {
         animate={collapsed ? 'collapsed' : 'expanded'}
         variants={ContentVariants}
       > */}
-      <SearchResults results={state.results} filters={state.filters} />
+      <SearchResults results={state.results} filters={state.filters} loading={loading}/>
       {/* </motion.div> */}
     </Box>
   )

@@ -7,6 +7,7 @@ import PagesList from '../../components/PagesList'
 import { Box } from '../../components/Styled'
 import endpoints from '../../constants/apis'
 import { Header } from './components'
+import theme from '../../theme'
 
 type DynamicContentPaneProps = {
   label: string
@@ -48,7 +49,15 @@ const DynamicContentPanePane = ({
         {results.length !== 0 ? (
           <PagesList results={results} colspan={results.length > 1 ? colspan : 1} />
         ) : (
-          <Loader type="ThreeDots" color="#00BFFF" height={40} width={40} timeout={3000} />
+          <div style={{ textAlign: 'center', width: '100%' }}>
+            <Loader
+              type="ThreeDots"
+              color={theme.amidoColor}
+              height={40}
+              width={40}
+              timeout={3000}
+            />
+          </div>
         )}
       </AnimateHeight>
     </Box>

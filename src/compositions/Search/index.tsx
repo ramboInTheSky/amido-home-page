@@ -5,10 +5,8 @@ import ClearIcon from '@material-ui/icons/Clear'
 import SearchIcon from '@material-ui/icons/Search'
 import axios from 'axios'
 import React, { useState } from 'react'
-import Loader from 'react-loader-spinner'
 import endpoints from '../../constants/apis'
-import theme from '../../theme'
-import { InputField, SearchGrid, ToggleGroup } from './components'
+import { SearchContainer, InputField, SearchGrid, ToggleGroup } from './components'
 
 type SearchProps = {
   callback: (
@@ -18,12 +16,13 @@ type SearchProps = {
       pages: boolean
       attachments: boolean
     }
-  ) => void
+  ) => void,
+  setLoading: (i:boolean) => void
 }
 let results: [] = []
-const Search = ({ callback }: SearchProps) => {
+const Search = ({ callback, setLoading }: SearchProps) => {
   const [value, setValue] = useState('')
-  const [loading, setLoading] = useState(false)
+  // const [loading, setLoading] = useState(false)
 
   const [state, setState] = React.useState({
     comments: true,
@@ -62,28 +61,21 @@ const Search = ({ callback }: SearchProps) => {
   return (
     <SearchGrid>
       <Grid container spacing={1} alignItems="flex-end">
-        <Grid item>
+        <SearchContainer item>
           <InputField
+            fullWidth
             id="input-with-icon-grid"
             label="Search Confluence"
             onKeyUp={handleKeyPress}
             value={value}
             onChange={handleInputChange}
           />
-        </Grid>
+        </SearchContainer>
         <Grid item style={{ cursor: 'pointer' }}>
           {value && <ClearIcon onClick={clearSearch} />}
           <SearchIcon onClick={handleSearch} />
         </Grid>
-        {loading && (
-          <Loader
-            type="ThreeDots"
-            color={theme.darkestColor}
-            height={30}
-            width={30}
-            timeout={3000}
-          />
-        )}
+        
       </Grid>
       <Grid>
         <ToggleGroup row>

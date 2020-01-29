@@ -5,9 +5,9 @@ export const productionAPIs = Object.freeze({
 })
 
 export const developmentAPIs = Object.freeze({
-  search: '/search.json',
-  allSpaces: '/allspaces.json',
-  searchByLabel: '/searchbylabel.json',
+  search: '/search',
+  allSpaces: '/allspaces',
+  searchByLabel: '/searchbylabel',
 })
 
-export default productionAPIs
+export default developmentAPIs
