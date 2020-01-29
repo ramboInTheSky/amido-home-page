@@ -39,7 +39,6 @@ const SearchResults = ({ results, filters, loading }: SearchResultsProps) => {
             color={theme.darkestColor}
             height={30}
             width={30}
-            timeout={3000}
           />
         </div>
       )}

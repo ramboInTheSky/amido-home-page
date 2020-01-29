@@ -33,7 +33,7 @@
     "case-sensitive-paths-webpack-plugin": "2.2.0",
     "cookie-parser": "^1.4.4",
     "css-loader": "3.2.0",
-    "dotenv": "8.2.0",
+    "dotenv": "^8.2.0",
     "dotenv-expand": "5.1.0",
     "eslint": "^6.6.0",
     "eslint-config-react-app": "^5.1.0",
@@ -104,7 +104,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "watch": "npm-watch",
+    "watch": "NODE_ENV=development npm-watch",
     "server": "NODE_ENV=development nodemon --exec babel-node launcher.js"
   },
   "watch": {
