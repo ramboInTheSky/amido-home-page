@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import theme from '../../theme'
 
 export const Box = styled(Card)`
+  box-sizing: border-box;
   width: 100%;
   background-color: #fff !important;
   opacity: 0.9;
