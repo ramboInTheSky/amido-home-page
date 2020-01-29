@@ -10,4 +10,4 @@ export const developmentAPIs = Object.freeze({
   searchByLabel: '/searchbylabel',
 })
 
-export default developmentAPIs
+export default productionAPIs
