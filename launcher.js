@@ -102,14 +102,14 @@ app.get('/allspaces', (req, res) => {
 
 app.get('/quote', (req, res) => {
   axios
-    .get('https://api.paperquotes.com/apiv1/quotes/', {
+    .get('https://api.paperquotes.com/apiv1/qod/?lang=en', {
       headers: {
         Authorization: quotesToken,
         'Content-Type': 'application/json'
       },
     })
     .then(response => {
-      res.send(response.data.results)
+      res.send(response.data)
     })
     .catch(error => {
       console.log(error)

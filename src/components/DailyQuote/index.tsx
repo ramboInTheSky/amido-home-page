@@ -1,20 +1,21 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { Quote } from './components'
+// import { motion } from 'framer-motion'
 
 interface IQuote {
   quote: string
-  length: string
-  author: string
-  background: string
+  length?: string
+  author?: string
+  background?: string
 }
 const DailyQuote = () => {
-  const [quote, setState] = useState({} as IQuote)
+  const [quote, setState] = useState({quote: ''} as IQuote)
   useEffect(() => {
     async function fetchData() {
-      const res: { data: [any] } = await axios.get(`/quote`)
+      const res: { data: IQuote } = await axios.get(`/quote`)
       console.log(res.data)
-      setState(res.data[0])
+      setState(res.data)
     }
     fetchData()
     // fetchDataLinkedin()
@@ -24,10 +25,8 @@ const DailyQuote = () => {
   }, [])
   return (
     <Quote>
-      <span>
         <p style={{ textAlign: 'center' }}>{quote.quote}</p>{' '}
-        {/* <p style={{ textAlign: 'right' }}>{quote.author}</p> */}
-      </span>
+        <p style={{ textAlign: 'right' }}>{quote.author}</p>{' '}
     </Quote>
   )
 }
