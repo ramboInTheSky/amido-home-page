@@ -16,14 +16,11 @@ const DailyQuote = () => {
   } as Quote)
   useEffect(() => {
     async function fetchData() {
-      console.log('getting cachedData')
       const cachedData = getDataFromCache(apis.quote) // this returns data if it exists and it is not expired
-      console.log('got cached data', cachedData)
-      const res: { data: Quote } = cachedData ?? (await axios.get(apis.quote))
-      setState(res.data)
+      const { data }: { data: Quote } = cachedData ?? (await axios.get(apis.quote))
+      setState(data)
       if (!cachedData) {
-        console.log('updating cache with: ', res)
-        updateCache(apis.quote, res)
+        updateCache(apis.quote, data)
       }
     }
     fetchData()
