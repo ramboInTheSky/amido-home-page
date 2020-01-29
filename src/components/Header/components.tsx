@@ -20,11 +20,12 @@ export const HeaderWrapper = styled.div`
 export const AnimatedLogo = styled(motion.div)`
   background-image: url('https://amido.com/app/themes/e3creative/dist/images/logo-brand.svg');
   background-size: 100px;
-  width: 8rem;
+  width: 6rem;
   background-repeat: no-repeat;
 `
 
 export const Title = styled.h1`
   font-size: 2rem;
   margin-top: 5px;
+  margin-left: 2rem;
 `

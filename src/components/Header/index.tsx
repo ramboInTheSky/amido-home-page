@@ -1,5 +1,5 @@
 import React from 'react'
-import { HeaderWrapper, AnimatedLogo, Title } from './components'
+import { AnimatedLogo, HeaderWrapper, Title } from './components'
 
 type HeaderProps = {}
 
@@ -11,8 +11,8 @@ const Header = (props: HeaderProps) => {
         animate={{ rotate: 360, scale: 1 }}
         transition={{
           type: 'spring',
-          stiffness: 190,
-          damping: 20,
+          stiffness: 250,
+          damping: 10,
         }}
       />
       <Title> We thought you might find this useful yo! </Title>
