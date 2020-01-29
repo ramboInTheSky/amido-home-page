@@ -22,6 +22,7 @@ export const AnimatedLogo = styled(motion.div)`
   background-size: 100px;
   width: 6rem;
   background-repeat: no-repeat;
+  transform: rotate(180deg);
 `
 
 export const Title = styled.h1`
