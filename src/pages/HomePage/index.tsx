@@ -10,62 +10,62 @@ import { Col, HomePageWrapper, Intro, Row } from './components'
 
 type HomePageProps = {}
 
-const items = [
-  {
-    id: 1,
-    type: 'lallero',
-    key: 'AC',
-    name: 'Amido Academy 1',
-    _links: {
-      webui: '/spaces/AC1',
-    },
-  },
-  {
-    id: 2,
-    type: 'lallero',
-    key: 'AC',
-    name: 'Amido Academy2',
-    _links: {
-      webui: '/spaces/AC2',
-    },
-  },
-  {
-    id: 3,
-    type: 'lallero',
-    key: 'AC',
-    name: 'Amido Academy2',
-    _links: {
-      webui: '/spaces/AC2',
-    },
-  },
-  {
-    id: 11,
-    type: 'lallero',
-    key: 'AC',
-    name: 'Amido Academy 1',
-    _links: {
-      webui: '/spaces/AC1',
-    },
-  },
-  {
-    id: 12,
-    type: 'lallero',
-    key: 'AC',
-    name: 'Amido Academy2',
-    _links: {
-      webui: '/spaces/AC2',
-    },
-  },
-  {
-    id: 13,
-    type: 'lallero',
-    key: 'AC',
-    name: 'Amido Academy2',
-    _links: {
-      webui: '/spaces/AC2',
-    },
-  },
-]
+// const items = [
+//   {
+//     id: 1,
+//     type: 'lallero',
+//     key: 'AC',
+//     name: 'Amido Academy 1',
+//     _links: {
+//       webui: '/spaces/AC1',
+//     },
+//   },
+//   {
+//     id: 2,
+//     type: 'lallero',
+//     key: 'AC',
+//     name: 'Amido Academy2',
+//     _links: {
+//       webui: '/spaces/AC2',
+//     },
+//   },
+//   {
+//     id: 3,
+//     type: 'lallero',
+//     key: 'AC',
+//     name: 'Amido Academy2',
+//     _links: {
+//       webui: '/spaces/AC2',
+//     },
+//   },
+//   {
+//     id: 11,
+//     type: 'lallero',
+//     key: 'AC',
+//     name: 'Amido Academy 1',
+//     _links: {
+//       webui: '/spaces/AC1',
+//     },
+//   },
+//   {
+//     id: 12,
+//     type: 'lallero',
+//     key: 'AC',
+//     name: 'Amido Academy2',
+//     _links: {
+//       webui: '/spaces/AC2',
+//     },
+//   },
+//   {
+//     id: 13,
+//     type: 'lallero',
+//     key: 'AC',
+//     name: 'Amido Academy2',
+//     _links: {
+//       webui: '/spaces/AC2',
+//     },
+//   },
+// ]
 
 const HomePage = (props: HomePageProps) => {
 
@@ -86,19 +86,19 @@ const HomePage = (props: HomePageProps) => {
             <SearchPane />
           </Row>
           <Row>
-            <ContentPane spaceKey="Amido Work Life" results={items} colspan={3} />
+          <DynamicContentPane title={'Work Life'} colspan={3} label={'Portal-worklife'}/>
           </Row>
           <Row>
-            <ContentPane spaceKey="Amido Work Life" results={items} colspan={2} />
-            <ContentPane spaceKey="Amido Work Life" results={items} colspan={2} />
+            <DynamicContentPane title={'Projects'} colspan={1} label={'Portal-projects'}/>
+            <DynamicContentPane title={'Learning'} colspan={1} label={'Portal-learning'}/>
           </Row>
           <Row>
-            <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
-            <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
-            <ContentPane spaceKey="Amido Work Life" results={items} colspan={1} />
+          <DynamicContentPane title={'Domain Competencies'} colspan={1} label={'Portal-domaincompetency'}/>
+          <DynamicContentPane title={'Communities'} colspan={1} label={'Portal-communities'}/>
+          <DynamicContentPane title={'Events'} colspan={1} label={'Portal-events'}/>
           </Row>
           <Row>
-            <DynamicContentPane title={'Alessio is the best'} colspan={1} label={'portal-alessio'}/>
+            <DynamicContentPane title={'Using Confluence'} colspan={1} label={'Portal-usingconfluence'}/>
           </Row>
         </Col>
         <Col className="rightCol">
@@ -108,7 +108,7 @@ const HomePage = (props: HomePageProps) => {
           <Row>
             <TwitterPane />
           </Row>
-          <Row>
+          {/* <Row>
             <iframe
               src="https://www.linkedin.com/embed/feed/update/urn:li:share:6616282134443241472"
               height="530"
@@ -116,7 +116,7 @@ const HomePage = (props: HomePageProps) => {
               frameBorder="0"
               title="Embedded post"
             />
-          </Row>
+          </Row> */}
         </Col>
       </HomePageWrapper>
     </Layout>
