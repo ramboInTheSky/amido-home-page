@@ -1,6 +1,6 @@
 export const productionAPIs = Object.freeze({
-  quote: '/.netlify/functions/search',
-  search: '/.netlify/functions/quote',
+  quote: '/.netlify/functions/quote',
+  search: '/.netlify/functions/search',
   allSpaces: '/.netlify/functions/allspaces',
   searchByLabel: '/.netlify/functions/searchbylabel',
 })
