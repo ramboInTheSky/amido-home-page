@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 import theme from '../../theme'
 
@@ -16,7 +17,7 @@ export const HeaderWrapper = styled.div`
   left: 0; */
 `
 
-export const Logo = styled.div`
+export const AnimatedLogo = styled(motion.div)`
   background-image: url('https://amido.com/app/themes/e3creative/dist/images/logo-brand.svg');
   background-size: 100px;
   width: 8rem;

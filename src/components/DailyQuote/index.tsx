@@ -32,12 +32,10 @@ const DailyQuote = () => {
     <>
       {quote.quote && (
         <AnimatedContainer
-          initial={{ scale: 0 }}
-          animate={{ rotate: 360, scale: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{
-            type: 'spring',
-            stiffness: 190,
-            damping: 20,
+            duration: 2
           }}
         >
           <Quote>
