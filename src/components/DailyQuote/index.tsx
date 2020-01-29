@@ -1,9 +1,10 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import apis from '../../constants/apis'
+import {getDataFromCache, updateCache} from '../../utils/cache'
 import { AnimatedContainer, Quote } from './components'
 
-interface IQuote {
+interface Quote {
   quote: string
   length?: string
   author?: string
@@ -11,15 +12,16 @@ interface IQuote {
 }
 const DailyQuote = () => {
   const [quote, setState] = useState({
-    quote: ''
-  } as IQuote)
+    quote: '',
+  } as Quote)
   useEffect(() => {
     async function fetchData() {
-      const res: { data: IQuote } = await axios.get(apis.quote)
+      const cachedData = getDataFromCache(apis.quote) // this returns data if it exists and it is not expired
+      const res: { data: Quote } = cachedData ?? (await axios.get(apis.quote))
       setState(res.data)
+      if(!cachedData) updateCache(apis.quote, res)
     }
     fetchData()
-    // fetchDataLinkedin()
     return function cleanup() {
       console.log('the DailyQuote component has unmounted')
     }
