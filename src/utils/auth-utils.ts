@@ -59,8 +59,7 @@ export const GRAPH_REQUESTS = {
 export const msalApp = new UserAgentApplication({
   auth: {
     clientId: 'f7216bce-7932-4445-aafb-c713e660d3b5',
-    // authority: 'https://login.microsoftonline.com/f88c76e1-2e79-4cd5-8b37-842f3f870d58',
-    authority: 'https://login.microsoftonline.com/common',
+    authority: 'https://login.microsoftonline.com/f88c76e1-2e79-4cd5-8b37-842f3f870d58',
     validateAuthority: true,
     postLogoutRedirectUri: isDev ? 'https://localhost:3000' : 'https://amido.netlify.com',
     redirectUri: isDev ? 'https://localhost:3000' : 'https://amido.netlify.com',

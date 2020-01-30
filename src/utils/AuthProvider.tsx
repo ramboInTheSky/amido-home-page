@@ -4,7 +4,7 @@ import {
   GRAPH_ENDPOINTS,
   GRAPH_REQUESTS,
   GRAPH_SCOPES,
-  isIE,
+//   isIE,
   msalApp,
   requiresInteraction,
 } from './auth-utils'
