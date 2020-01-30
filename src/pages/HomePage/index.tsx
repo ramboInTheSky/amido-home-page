@@ -9,7 +9,9 @@ import TwitterPane from '../../compositions/TwitterPane'
 import UsefulApps from '../../compositions/UsefulApps'
 import { Col, HomePageWrapper, Intro, Row } from './components'
 
-type HomePageProps = {}
+type HomePageProps = {
+  account: any
+}
 
 // const items = [
 //   {
@@ -70,7 +72,7 @@ type HomePageProps = {}
 
 const HomePage = (props: HomePageProps) => {
   return (
-    <Layout>
+    <Layout account={props.account}>
       <HomePageWrapper className="mainContainer">
         <Col className="leftCol">
           <Row>

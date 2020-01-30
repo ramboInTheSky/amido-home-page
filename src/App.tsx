@@ -1,3 +1,4 @@
+// tslint:disable: jsx-no-lambda
 import { ThemeProvider } from '@material-ui/core/styles'
 // import * as Msal from 'msal'
 import React from 'react'
@@ -6,7 +7,7 @@ import { amidoTheme, MainWrapper } from './App.styles'
 import HomePage from './pages/HomePage'
 import AuthProvider from './utils/AuthProvider'
 
-class App extends React.Component<any> {
+const App: React.FC = (props: any) => {
   // const msalConfig = {
   //   auth: {
   //     clientId: 'your_client_id',
@@ -24,20 +25,19 @@ class App extends React.Component<any> {
   // }
 
   // msalInstance.loginRedirect(loginRequest)
+  // console.log(props.account)
 
-  render() {
-    return (
-      <ThemeProvider theme={amidoTheme}>
-        <MainWrapper>
-          <Router>
-            <Switch>
-              <Route path="/" component={HomePage} />
-            </Switch>
-          </Router>
-        </MainWrapper>
-      </ThemeProvider>
-    )
-  }
+  return (
+    <ThemeProvider theme={amidoTheme}>
+      <MainWrapper>
+        <Router>
+          <Switch>
+            <Route path="/" render={p => <HomePage {...p} account={props.account} />} />
+          </Switch>
+        </Router>
+      </MainWrapper>
+    </ThemeProvider>
+  )
 }
 
 export default AuthProvider(App)

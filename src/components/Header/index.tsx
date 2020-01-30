@@ -1,7 +1,10 @@
 import React from 'react'
 import { AnimatedLogo, HeaderWrapper, Title } from './components'
+import theme from '../../theme'
 
-type HeaderProps = {}
+type HeaderProps = {
+  account: any
+}
 
 const Header = (props: HeaderProps) => {
   return (
@@ -15,7 +18,7 @@ const Header = (props: HeaderProps) => {
           damping: 20,
         }}
       />
-      <Title> We thought you might find this useful yo! </Title>
+<Title> Hey <span style={{color:theme.amidoColor, fontFamily: 'inherit'}}>{props.account?.name?.split(' ')[0]}</span> We thought you might find this useful yo! </Title>
     </HeaderWrapper>
   )
 }
