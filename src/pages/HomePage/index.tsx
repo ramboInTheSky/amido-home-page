@@ -11,6 +11,7 @@ import { Col, HomePageWrapper, Intro, Row } from './components'
 
 type HomePageProps = {
   account: any
+  logout: Function
 }
 
 // const items = [
@@ -72,7 +73,7 @@ type HomePageProps = {
 
 const HomePage = (props: HomePageProps) => {
   return (
-    <Layout account={props.account}>
+    <Layout account={props.account} logout={props.logout}>
       <HomePageWrapper className="mainContainer">
         <Col className="leftCol">
           <Row>

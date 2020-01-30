@@ -5,9 +5,10 @@ import theme from '../../theme'
 export const HeaderWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   height: 3rem;
   padding: 1rem;
+  min-width: 900px;
   /* background-color: ${theme.darkestColor};
   opacity: 0.9;
   z-index: 200;
@@ -29,4 +30,18 @@ export const Title = styled.h1`
   font-size: 2rem;
   margin-top: 5px;
   margin-left: 2rem;
+`
+
+export const Logout = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+`
+
+export const LeftCol = styled.div`
+  display: flex;
+`
+export const RightCol = styled.div`
+  display: flex;
 `
