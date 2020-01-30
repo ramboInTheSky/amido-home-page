@@ -8,6 +8,9 @@ import React, { useState } from 'react'
 import endpoints from '../../constants/apis'
 import { SearchContainer, InputField, SearchGrid, ToggleGroup } from './components'
 
+const CancelToken = axios.CancelToken
+let source = CancelToken.source()
+
 type SearchProps = {
   callback: (
     data: [],
@@ -16,8 +19,8 @@ type SearchProps = {
       pages: boolean
       attachments: boolean
     }
-  ) => void,
-  setLoading: (i:boolean) => void
+  ) => void
+  setLoading: (i: boolean) => void
 }
 let results: [] = []
 const Search = ({ callback, setLoading }: SearchProps) => {
@@ -30,11 +33,24 @@ const Search = ({ callback, setLoading }: SearchProps) => {
     attachments: true,
   })
   const handleSearch = async () => {
-    setLoading(true)
-    const res: { data: { results: [] } } = await axios.get(`${endpoints.search}?term=${value}`)
-    results = res.data.results
-    setLoading(false)
-    callback(res.data.results, state)
+    try {
+      source.cancel('Operation canceled by the user on a new search')
+      source = CancelToken.source()
+      setLoading(true)
+      const {
+        data: { results },
+      }: { data: { results: [] } } = await axios.get(`${endpoints.search}?term=${value}`, {
+        cancelToken: source.token,
+      })
+      setLoading(false)
+      callback(results, state)
+    } catch (thrown) {
+      if (axios.isCancel(thrown)) {
+        console.log('Request canceled', thrown.message)
+      } else {
+        // handle error
+      }
+    }
   }
   const handleKeyPress = (e: any) => {
     if (e.keyCode === 13) {
@@ -50,6 +66,8 @@ const Search = ({ callback, setLoading }: SearchProps) => {
     results = []
     setValue('')
     callback(results, state)
+    setLoading(false)
+    source.cancel('Operation canceled by the user.')
   }
   const handleInputChange = (e: any) => setValue(e.target.value)
   const handleSwitchChanges = (name: string) => (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -75,7 +93,6 @@ const Search = ({ callback, setLoading }: SearchProps) => {
           {value && <ClearIcon onClick={clearSearch} />}
           <SearchIcon onClick={handleSearch} />
         </Grid>
-        
       </Grid>
       <Grid>
         <ToggleGroup row>
