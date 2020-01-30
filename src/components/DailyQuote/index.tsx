@@ -17,13 +17,13 @@ const DailyQuote = () => {
   useEffect(() => {
     async function fetchData() {
       const cachedData = getDataFromCache(apis.quote) // this returns data if it exists and it is not expired
-      const { data }: { data: Quote } = cachedData?.data ?? (await axios.get(apis.quote))
-      if (!cachedData) {
-        updateCache(apis.quote, data)
-      }
+      const { data }: { data: Quote } = cachedData ?? (await axios.get(apis.quote))
       //little funny hack to keep religion-agnostic mood in da house
       const newData = { ...data, quote: data.quote.replace(/ God/g, ' Alessio') }
       // end little hack
+      if (!cachedData) {
+        updateCache(apis.quote, { data: newData })
+      }
       setState(newData)
     }
     fetchData()
