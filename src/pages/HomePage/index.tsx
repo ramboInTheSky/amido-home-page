@@ -8,7 +8,6 @@ import SearchPane from '../../compositions/SearchPane'
 import TwitterPane from '../../compositions/TwitterPane'
 import UsefulApps from '../../compositions/UsefulApps'
 import { Col, HomePageWrapper, Intro, Row } from './components'
-import Axios from 'axios'
 
 type HomePageProps = {
   account: any
