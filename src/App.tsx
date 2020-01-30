@@ -25,7 +25,7 @@ const App: React.FC = (props: any) => {
 
   // msalInstance.loginRedirect(loginRequest)
   if (!props.account) {
-    props.onSignIn()
+    props.onSignIn(true)
   }
 
   return (
