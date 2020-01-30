@@ -5,7 +5,7 @@ exports.handler = async (event, context, callback) => {
     'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
   const searchTerm = event.queryStringParameters.term
   const res = await axios.get(
-    `https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~${searchTerm}`,
+    `https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~"${searchTerm}"*`,
     {
       headers: {
         Authorization: confluenceAuthStr,

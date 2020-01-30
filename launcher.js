@@ -119,7 +119,7 @@ app.get('/quote', (req, res) => {
 app.get('/search', (req, res) => {
   const searchTerm = req.query.term
   axios
-    .get(`https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~${searchTerm}`, {
+    .get(`https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~"${searchTerm}"*`, {
       headers: {
         Authorization: confluenceAuthStr,
         'X-Atlassian-Token': 'no-check',

@@ -18,7 +18,7 @@ const DailyQuote = () => {
     async function fetchData() {
       const cachedData = getDataFromCache(apis.quote) // this returns data if it exists and it is not expired
       const { data }: { data: Quote } = cachedData ?? (await axios.get(apis.quote))
-      //little funny hack to keep religion-agnostic mood in da house
+      // little funny hack to keep religion-agnostic mood in da house
       const newData = { ...data, quote: data.quote.replace(/ God/g, ' Alessio') }
       // end little hack
       if (!cachedData) {
