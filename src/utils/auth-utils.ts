@@ -63,8 +63,8 @@ export const msalApp = new UserAgentApplication({
         clientId: "f7216bce-7932-4445-aafb-c713e660d3b5",
         authority: "https://login.microsoftonline.com/f88c76e1-2e79-4cd5-8b37-842f3f870d58",
         validateAuthority: true,
-        postLogoutRedirectUri: "http://localhost:3000",
-        redirectUri: "http://localhost:3000",
+        postLogoutRedirectUri: "https://amido.netlify.com",
+        redirectUri: "https://amido.netlify.com",
         navigateToLoginRequestUrl: false
     },
     cache: {
