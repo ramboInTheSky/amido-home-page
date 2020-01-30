@@ -6,7 +6,7 @@ import { amidoTheme, MainWrapper } from './App.styles'
 import HomePage from './pages/HomePage'
 import AuthProvider from './utils/AuthProvider'
 
-const App: React.FC = (props: any) => {
+class App extends React.Component<any> {
   // const msalConfig = {
   //   auth: {
   //     clientId: 'your_client_id',
@@ -24,21 +24,20 @@ const App: React.FC = (props: any) => {
   // }
 
   // msalInstance.loginRedirect(loginRequest)
-  if (!props.account) {
-    props.onSignIn(true)
-  }
 
-  return (
-    <ThemeProvider theme={amidoTheme}>
-      <MainWrapper>
-        <Router>
-          <Switch>
-            <Route path="/" component={HomePage} />
-          </Switch>
-        </Router>
-      </MainWrapper>
-    </ThemeProvider>
-  )
+  render() {
+    return (
+      <ThemeProvider theme={amidoTheme}>
+        <MainWrapper>
+          <Router>
+            <Switch>
+              <Route path="/" component={HomePage} />
+            </Switch>
+          </Router>
+        </MainWrapper>
+      </ThemeProvider>
+    )
+  }
 }
 
 export default AuthProvider(App)

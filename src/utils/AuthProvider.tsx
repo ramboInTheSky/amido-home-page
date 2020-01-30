@@ -4,7 +4,7 @@ import {
   GRAPH_ENDPOINTS,
   GRAPH_REQUESTS,
   GRAPH_SCOPES,
-//   isIE,
+  //   isIE,
   msalApp,
   requiresInteraction,
 } from './auth-utils'
@@ -120,6 +120,7 @@ export default (C: any) =>
     }
 
     public async componentDidMount() {
+      
       msalApp.handleRedirectCallback(error => {
         if (error) {
           const errorMessage = error.errorMessage
@@ -161,6 +162,9 @@ export default (C: any) =>
             return this.readMail(tokenResponse.accessToken)
           }
         }
+      }
+      else{
+        this.onSignIn(true)
       }
     }
 
