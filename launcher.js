@@ -17,7 +17,7 @@ const logger = morgan('dev')
 const isDeveloping = process.env.NODE_ENV && process.env.NODE_ENV === 'development'
 
 const confluenceAuthStr =
-  'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
+  'Basic YW1pZG8taW50ZXJuYWwtcG9ydGFsQGFtaWRvLmNvbTpjRW5qTFU0ODFTNWd4WWYwVmRsWkVDMDk='
 const quotesToken = 'Token 19c1db548f6878076281957fa6fa1c668dc0726f'
 
 const parseResponse = (req, res) => {

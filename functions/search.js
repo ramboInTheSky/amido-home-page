@@ -4,7 +4,7 @@ const REFERER = 'https://amido.netlify.com/'
 exports.handler = async (event, context, callback) => {
   if (event.headers.referer === REFERER) {
     const confluenceAuthStr =
-      'Basic YWxlc3Npby5maW1vZ25hcmlAYW1pZG8uY29tOmZjMVBFc05CTndJRUc3MnlmRlJHMjU0Ng=='
+      'Basic YW1pZG8taW50ZXJuYWwtcG9ydGFsQGFtaWRvLmNvbTpjRW5qTFU0ODFTNWd4WWYwVmRsWkVDMDk='
     const searchTerm = event.queryStringParameters.term
     const res = await axios.get(
       `https://amidodevelopment.atlassian.net/wiki/rest/api/search?cql=text~"${searchTerm}"*`,
@@ -26,3 +26,7 @@ exports.handler = async (event, context, callback) => {
     callback(null, { statusCode: 401 })
   }
 }
+
+// amido-internal-portal@amido.com
+// cEnjLU481S5gxYf0VdlZEC09
+// YW1pZG8taW50ZXJuYWwtcG9ydGFsQGFtaWRvLmNvbTpjRW5qTFU0ODFTNWd4WWYwVmRsWkVDMDk==

@@ -1,5 +1,10 @@
 [build]
-    functions = "functions"
-    base = "/"
-    publish = "build"
-    command = "yarn build"
+  functions = "functions"
+  base = "/"
+  publish = "build"
+  command = "yarn build"
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
